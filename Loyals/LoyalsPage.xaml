@@ -14,15 +14,27 @@
 			<RowDefinition Height="AUTO"/>
 		</Grid.RowDefinitions>
 
+		<!-- header background -->
 		<BoxView BackgroundColor="Blue" Grid.Row="0"/>
 
-		<BoxView BackgroundColor="Pink" Grid.Row="1"/>
+		<!--Shop Name -->
+		<BoxView BackgroundColor="Pink" Grid.Row="1"
+				 HeightRequest="100"
+		/>
 
 		<BoxView BackgroundColor="Green" Grid.Row="2"/>
 
 		<BoxView BackgroundColor="Cyan" Grid.Row="3"/>
 
 		<BoxView BackgroundColor="Yellow" Grid.Row="4"/>
+
+		<!--Shop Image-->
+		<BoxView BackgroundColor="Azure" HorizontalOptions="Center" 
+				 WidthRequest="100" 
+				 HeightRequest="100"
+		  		 VerticalOptions="End"
+				 TranslationY="50"
+		/>
 		
 		
 
