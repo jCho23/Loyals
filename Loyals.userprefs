@@ -1,0 +1,15 @@
+﻿<Properties StartupConfiguration="{CF200183-F703-4524-9B85-A5469548F8D0}|Default">
+  <MonoDevelop.Ide.ItemProperties.Loyals.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.8D55B962-E338-45AC-8B37-EA7B0F3EC530" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Loyals/LoyalsPage.xaml">
+    <Files>
+      <File FileName="Loyals/LoyalsPage.xaml" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Loyals.Droid PreferredExecutionTarget="Android.Nexus_5X_API_23" />
+  <MultiItemStartupConfigurations />
+</Properties>
