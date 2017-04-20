@@ -16,15 +16,14 @@
 
 		<!-- header background -->
 		<BoxView BackgroundColor="Blue" Grid.Row="0"/>
-		<Image Source="" Aspect="AspectFill"/>
-		<Image Source="" VerticalOptions="End" 
-						 Aspect="Fill"
-		/>
+		<Image Source="HeaderBackground.png" Aspect="AspectFit"/>
 
 		<!--Shop Name -->
-		<BoxView BackgroundColor="Pink" Grid.Row="1"
-				 HeightRequest="100"
-		/>
+		<StackLayout Grid.Row="1"
+			<Text="Zing Cafe"/>
+		</StackLayout>
+
+
 
 		<BoxView BackgroundColor="Green" Grid.Row="2"/>
 
@@ -33,17 +32,14 @@
 		<BoxView BackgroundColor="Yellow" Grid.Row="4"/>
 
 		<!--Shop Image-->
-		<BoxView BackgroundColor="Azure" HorizontalOptions="Center" 
+	
+		<Image Source="ZingProfile.jpg" HorizontalOptions="Center" 
 				 WidthRequest="100" 
 				 HeightRequest="100"
 		  		 VerticalOptions="End"
 				 TranslationY="50"
 		/>
 		
-		
-
-
-
 
 	</Grid>
 	
