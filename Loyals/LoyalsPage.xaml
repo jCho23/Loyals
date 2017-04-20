@@ -5,7 +5,7 @@
 	xmlns:local="clr-namespace:Loyals" 
 	x:Class="Loyals.LoyalsPage">
 
-	<Grid>
+	<Grid RowSpacing="0">
 		<Grid.RowDefinitions>
 			<RowDefinition Height="AUTO"/>
 			<RowDefinition Height="AUTO"/>
@@ -16,13 +16,13 @@
 
 		<BoxView BackgroundColor="Blue" Grid.Row="0"/>
 
-		<BoxView BackgroundColor="Red" Grid.Row="0"/>
+		<BoxView BackgroundColor="Pink" Grid.Row="1"/>
 
-		<BoxView BackgroundColor="Blue" Grid.Row="0"/>
+		<BoxView BackgroundColor="Green" Grid.Row="2"/>
 
-		<BoxView BackgroundColor="Blue" Grid.Row="0"/>
+		<BoxView BackgroundColor="Cyan" Grid.Row="3"/>
 
-		<BoxView BackgroundColor="Blue" Grid.Row="0"/>
+		<BoxView BackgroundColor="Yellow" Grid.Row="4"/>
 		
 		
 
