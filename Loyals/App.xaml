@@ -13,9 +13,12 @@
 
 			<!--Font Families-->
 			<OnPlatform x:Key="RegularFontFamily" x:TypeArguements="x:String">
-				<On Platform>
-
+				<On Platform="iOS">HelveticaNeue</On>
+				<On Platform="Android">sans-serif</On>
 			</OnPlatform>
+
+			<!--Font Sizes-->
+			
 			
 
 
