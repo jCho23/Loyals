@@ -15,13 +15,12 @@
 		</Grid.RowDefinitions>
 
 		<!-- header background -->
-		<BoxView BackgroundColor="Blue" Grid.Row="0"/>
 		<Image Source="HeaderBackground.png" Aspect="AspectFit"/>
 
 		<!--Shop Name -->
-		<StackLayout Grid.Row="1" Padding="0,50,0,0">
+		<StackLayout Grid.Row="1"> Padding="0,50,0,0">
 			<Label Text="Zing Cafe" Style="{StaticResource ProfileNameLabel}"/>
-			<Label Text="Sandwich Shop" Style="{StaticResource ProfileTagLabel}"/>
+			<Label Text="Sandwich Shop" Style="StaticResource ProfileTagLabel"/>
 		</StackLayout>
 
 

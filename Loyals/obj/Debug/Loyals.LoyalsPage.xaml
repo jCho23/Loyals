@@ -1,4 +1,45 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:Loyals" x:Class="Loyals.LoyalsPage">
-	<Label Text="Welcome to Xamarin Forms!" VerticalOptions="Center" HorizontalOptions="Center" />
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	xmlns:local="clr-namespace:Loyals" 
+	x:Class="Loyals.LoyalsPage">
+	BackgroundColor="{StaticResource BackgroundColor}">
+
+	<Grid RowSpacing="0">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="AUTO"/>
+			<RowDefinition Height="AUTO"/>
+			<RowDefinition Height="AUTO"/>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="AUTO"/>
+		</Grid.RowDefinitions>
+
+		<!-- header background -->
+		<BoxView BackgroundColor="Blue" Grid.Row="0"/>
+		<Image Source="HeaderBackground.png" Aspect="AspectFit"/>
+
+		<!--Shop Name -->
+		<BoxView BackgroundColor="Green" Grid.Row="1"/>
+
+
+		<BoxView BackgroundColor="Green" Grid.Row="2"/>
+
+		<BoxView BackgroundColor="Cyan" Grid.Row="3"/>
+
+		<BoxView BackgroundColor="Yellow" Grid.Row="4"/>
+
+		<!--Shop Image-->
+	
+		<Image Source="ZingProfile.jpg" HorizontalOptions="Center" 
+				 WidthRequest="100" 
+				 HeightRequest="100"
+		  		 VerticalOptions="End"
+				 TranslationY="50"
+		/>
+		
+
+	</Grid>
+	
+
 </ContentPage>
