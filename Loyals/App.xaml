@@ -37,9 +37,9 @@
 			</Style>
 
 			<Style x:Key="ProfileTagLabel" TargetType="Label">
-				<Setter Property="TextColor" Value="{StaticResource HeaderTextColor}" />
+				<Setter Property="TextColor" Value="{StaticResource BodyTextColor}" />
 				<Setter Property="FontFamily" Value="{StaticResource RegularFontFamily}" />
-				<Setter Property="FontSize" Value="{StaticResource TitleFontSize}" />
+				<Setter Property="FontSize" Value="{StaticResource TagTextFontSize}" />
 				<Setter Property="HorizontalTextAlignment" Value="Center" />
 			</Style>
 			
