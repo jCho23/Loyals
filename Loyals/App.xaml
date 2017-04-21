@@ -10,6 +10,9 @@
 		<ResourceDictionary>
 			<!-- Colors -->
 			<Color X:Key="HeaderTextColor">#585858</Color>
+			<Color X:Key="BodyTextColor">#C3C3C3</Color>
+			<Color X:Key="ButtonBackgroundColor">#5992FF</Color>
+			<Color X:Key="BackgroundColor">#White</Color>
 
 			<!--Font Families-->
 			<OnPlatform x:Key="RegularFontFamily" x:TypeArguements="x:String">
@@ -27,6 +30,13 @@
 
 			<!--Styles-->
 			<Style x:Key="ProfileNameLabel" TargetType="Label">
+				<Setter Property="TextColor" Value="{StaticResource HeaderTextColor}" />
+				<Setter Property="FontFamily" Value="{StaticResource RegularFontFamily}" />
+				<Setter Property="FontSize" Value="{StaticResource TitleFontSize}" />
+				<Setter Property="HorizontalTextAlignment" Value="Center" />
+			</Style>
+
+			<Style x:Key="ProfileTagLabel" TargetType="Label">
 				<Setter Property="TextColor" Value="{StaticResource HeaderTextColor}" />
 				<Setter Property="FontFamily" Value="{StaticResource RegularFontFamily}" />
 				<Setter Property="FontSize" Value="{StaticResource TitleFontSize}" />
