@@ -1,6 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Application xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Loyals.App">
+<Application 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="Loyals.App">
+	
 	<Application.Resources>
-		<!-- Application resource dictionary -->
+		
+		<!-- Resource dictionary -->
+		<ResourceDictionary>
+			<!-- Colors -->
+			<Color X:Key="HeaderTextColor">#585858</Color>
+
+			<!--Font Families-->
+			<OnPlatform x:Key="RegularFontFamily" x:TypeArguements="x:String">
+				<On Platform>
+
+			</OnPlatform>
+			
+
+
+		</ResourceDictionary>
+		
 	</Application.Resources>
 </Application>
