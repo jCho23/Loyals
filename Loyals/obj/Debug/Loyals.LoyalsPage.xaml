@@ -4,7 +4,6 @@
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
 	xmlns:local="clr-namespace:Loyals" 
 	x:Class="Loyals.LoyalsPage">
-	BackgroundColor="{StaticResource BackgroundColor}">
 
 	<Grid RowSpacing="0">
 		<Grid.RowDefinitions>
@@ -16,11 +15,13 @@
 		</Grid.RowDefinitions>
 
 		<!-- header background -->
-		<BoxView BackgroundColor="Blue" Grid.Row="0"/>
 		<Image Source="HeaderBackground.png" Aspect="AspectFit"/>
 
 		<!--Shop Name -->
-		<BoxView BackgroundColor="Green" Grid.Row="1"/>
+		<StackLayout Grid.Row="1"> Padding="0,50,0,0">
+			<Label Text="Zing Cafe" Style="{StaticResource ProfileNameLabel}"/>
+			<Label Text="Sandwich Shop" Style="StaticResource ProfileTagLabel"/>
+		</StackLayout>
 
 
 		<BoxView BackgroundColor="Green" Grid.Row="2"/>
