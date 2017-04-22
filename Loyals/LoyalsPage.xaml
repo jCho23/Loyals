@@ -7,20 +7,20 @@
 
 	<Grid RowSpacing="0">
 		<Grid.RowDefinitions>
-			<RowDefinition Height="AUTO"/>
-			<RowDefinition Height="AUTO"/>
-			<RowDefinition Height="AUTO"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
 			<RowDefinition Height="*"/>
-			<RowDefinition Height="AUTO"/>
+			<RowDefinition Height="Auto"/>
 		</Grid.RowDefinitions>
 
 		<!-- header background -->
 		<Image Source="HeaderBackground.png" Aspect="AspectFit"/>
 
 		<!--Shop Name -->
-		<StackLayout Grid.Row="1"> Padding="0,50,0,0">
+		<StackLayout Grid.Row="1" Padding="0,50,0,0">
 			<Label Text="Zing Cafe" Style="{StaticResource ProfileNameLabel}"/>
-			<Label Text="Sandwich Shop" Style="StaticResource ProfileTagLabel"/>
+			<Label Text="Sandwich Shop" Style="{StaticResource ProfileTagLabel}"/>
 		</StackLayout>
 
 

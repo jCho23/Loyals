@@ -1,9 +1,10 @@
 ﻿<Properties StartupConfiguration="{10FDB463-0D63-4F37-8503-5C2759B4E31F}|Default">
-  <MonoDevelop.Ide.ItemProperties.Loyals.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.8D55B962-E338-45AC-8B37-EA7B0F3EC530" />
+  <MonoDevelop.Ide.ItemProperties.Loyals.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.D3D6CBE7-67C2-4E6D-AD3A-82679472D3E9" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Loyals/App.xaml">
     <Files>
-      <File FileName="Loyals/LoyalsPage.xaml" Line="9" Column="23" />
-      <File FileName="Loyals/App.xaml" Line="38" Column="15" />
+      <File FileName="Loyals/obj/Debug/Loyals.App.xaml.g.cs" Line="19" Column="1" />
+      <File FileName="Loyals/App.xaml.cs" Line="4" Column="60" />
+      <File FileName="Loyals/App.xaml" Line="12" Column="5" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
