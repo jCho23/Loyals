@@ -6,6 +6,7 @@
 	x:Class="Loyals.LoyalsPage"
 	BackgroundColor="{StaticResource BackgroundColor}">
 
+	
 	<Grid RowSpacing="0">
 		<Grid.RowDefinitions>
 			<RowDefinition Height="*"/>
@@ -45,8 +46,8 @@
 		<!--History-->
 		<ScrollView BackgroundColor="Transparent" Grid.Row="3">
 			<StackLayout  
-				Padding="0,50,0,0"
-				Spacing="5"
+				Padding="0,0,0,0"
+				Spacing="4"
 				WidthRequest="400"
 	            HorizontalOptions="Center"
 	            VerticalOptions="CenterAndExpand"
@@ -60,6 +61,11 @@
 				<Label Text="4/19    Sandwich and Cookie = $30 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Center"/>
 				<Label Text="4/23    Sandwich and OJ= $30 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Center"/>
 				<Label Text="4/25    Coffee and Brownie = $30 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Center"/>
+				<Label Text="5/5    Coffee and Brownie  = $30 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Center"/>
+				<Label Text="5/12    Sandwich and Drink = $30 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Center"/>
+				<Label Text="5/17    Sandwich and Cookie = $30 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Center"/>
+				<Label Text="5/23    Sandwich and OJ= $30 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Center"/>
+				<Label Text="5/25    Coffee and Brownie = $30 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Center"/>
 			</StackLayout>
 		</ScrollView>
 		
@@ -75,7 +81,7 @@
 		  	VerticalOptions="End"
 			TranslationY="50"
 		/>
-
+			
 	</Grid>
 
 </ContentPage>
