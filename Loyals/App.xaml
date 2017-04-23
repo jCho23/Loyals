@@ -56,11 +56,19 @@
 				<Setter Property="FontSize" Value="{StaticResource StatsNumberFontSize}" />
 			</Style>
 
-			<Style x:Key="StatsNumberLabel" TargetType="Label">
-				<Setter Property="TextColor" Value="{StaticResource HeaderTextColor}" />
+			<Style x:Key="StatsCaptionLabel" TargetType="Label">
+				<Setter Property="TextColor" Value="{StaticResource BodyTextColor}" />
+				<Setter Property="Margin" Value="0,-5,0,0"/>
 				<Setter Property="HorizontalTextAlignment" Value="Center" />
 				<Setter Property="FontFamily" Value="{StaticResource LightFontFamily}" />
-				<Setter Property="FontSize" Value="{StaticResource StatsNumberFontSize}" />
+				<Setter Property="FontSize" Value="{StaticResource StatsCaptionFontSize}" />
+			</Style>
+
+			<Style x:Key="MainBodyLabel" TargetType="Label">
+				<Setter Property="TextColor" Value="{StaticResource BodyTextColor}" />
+				<Setter Property="FontFamily" Value="{StaticResource RegularFontFamily}" />
+				<Setter Property="FontSize" Value="{StaticResource BodyFontSize}" />
+				<Setter Property="HorizontalTextAlignment" Value="Center" />
 			</Style>
 
 
