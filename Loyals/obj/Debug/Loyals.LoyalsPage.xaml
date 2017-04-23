@@ -25,33 +25,38 @@
 		</StackLayout>
 
 		<!--Points -->
-		<Grid Grid.Row="2">
+		<Grid Grid.Row="2" Margin="0,30" ColumnSpacing="0">
 			<Grid.ColumnDefinitions>
-				<ColumnDefinition Width="*"/>
 				<ColumnDefinition Width="*"/>
 				<ColumnDefinition Width="*"/>
 			</Grid.ColumnDefinitions>
 
 			<StackLayout Grid.Column="0">
-				<Label Text="33" Style="{StaticResource StatsNumberLabel}"/>
-				<Label Text="Likes" Style="{StaticResource StatsCaptionLabel}"/>
+				<Label Text="230" Style="{StaticResource StatsNumberLabel}"/>
+				<Label Text="Points" Style="{StaticResource StatsCaptionLabel}"/>
 			</StackLayout>
-
+				<StackLayout Grid.Column="1">
+				<Label Text="33" Style="{StaticResource StatsNumberLabel}"/>
+				<Label Text="Points Needed" Style="{StaticResource StatsCaptionLabel}"/>
+			</StackLayout>
 		</Grid>
 
+		<!--Pictures-->
+		<Label Grid.Row="3" 
+			Text="BEST SANDWICHES EVER!"
+			Style="{Static Resource MainBodyLabel" Margin="20,0}"/>
 
-
-		<BoxView BackgroundColor="Cyan" Grid.Row="3"/>
-
-		<BoxView BackgroundColor="Yellow" Grid.Row="4"/>
-
+		<!--Redeem Button-->
+		<Button Grid.Row="4" 
+			Text="Redeem Points"/>
+			Style="{Static Resource FollowButton" Margin="20}"/>
+		
 		<!--Shop Image-->
-	
 		<Image Source="ZingProfile.jpg" HorizontalOptions="Center" 
-				 WidthRequest="100" 
-				 HeightRequest="100"
-		  		 VerticalOptions="End"
-				 TranslationY="50"
+			WidthRequest="100" 
+			HeightRequest="100"
+		  	VerticalOptions="End"
+			TranslationY="50"
 		/>
 		
 
