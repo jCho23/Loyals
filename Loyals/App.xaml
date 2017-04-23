@@ -1,6 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Application xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Loyals.App">
+
 	<Application.Resources>
+
 		<!-- Resource dictionary -->
 		<ResourceDictionary>
 			
@@ -77,11 +79,11 @@
 				<Setter Property="HeightRequest" Value="40" />
 				<Setter Property="BorderRadius" Value="20" />
 				<Setter Property="FontFamily" Value="{StaticResource MediumFontFamily}" />
+				<Setter Property="FontSize" Value="{StaticResource ButtonFontSize}" />
 			</Style>
-
-
-
 			
 		</ResourceDictionary>
+		
 	</Application.Resources>
+	
 </Application>
