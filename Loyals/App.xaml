@@ -73,7 +73,7 @@
 				<Setter Property="HorizontalTextAlignment" Value="Center" />
 			</Style>
 
-			<Style x:Key="FollowButton " TargetType="Button">
+			<Style x:Key="FollowButton" TargetType="Button">
 				<Setter Property="BackgroundColor" Value="{StaticResource ButtonBackgroundColor}" />
 				<Setter Property="TextColor" Value="White" />
 				<Setter Property="HeightRequest" Value="40" />

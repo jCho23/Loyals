@@ -3,8 +3,8 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Loyals/LoyalsPage.xaml">
     <Files>
       <File FileName="Loyals/App.xaml.cs" Line="4" Column="60" />
-      <File FileName="Loyals/App.xaml" Line="22" Column="51" />
-      <File FileName="Loyals/LoyalsPage.xaml" Line="1" Column="1" />
+      <File FileName="Loyals/App.xaml" Line="8" Column="3" />
+      <File FileName="Loyals/LoyalsPage.xaml" Line="51" Column="12" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

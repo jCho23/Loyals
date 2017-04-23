@@ -42,14 +42,13 @@
 		</Grid>
 
 		<!--Pictures-->
-		<Label Grid.Row="3" 
-			Text="BEST SANDWICHES EVER!"
-			Style="{Static Resource MainBodyLabel" Margin="20,0}"/>
+		<Label Grid.Row="3" Text="BEST SANDWICHES EVER!"
+			Style="{StaticResource MainBodyLabel}" Margin="20,0"/>
 
 		<!--Redeem Button-->
 		<Button Grid.Row="4" 
-			Text="Redeem Points"/>
-			Style="{Static Resource FollowButton" Margin="20}"/>
+			Text="Redeem Points"
+			Style="{StaticResource FollowButton}" Margin="20"/>
 		
 		<!--Shop Image-->
 		<Image Source="ZingProfile.jpg" HorizontalOptions="Center" 
