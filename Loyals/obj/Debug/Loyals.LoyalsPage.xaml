@@ -16,7 +16,7 @@
 		</Grid.RowDefinitions>
 
 		<!-- header background -->
-		<Image Source="HeaderBackground.png" Aspect="AspectFit"/>
+		<Image Source="HeaderBackground.png" Aspect="AspectFit" />
 
 		<!--Shop Name -->
 		<StackLayout Grid.Row="1" Padding="0,50,0,0">
@@ -48,7 +48,7 @@
 		<!--Redeem Button-->
 		<Button Grid.Row="4" 
 			Text="Redeem Points"
-			Style="{StaticResource FollowButton}" Margin="20"/>
+			Style="{StaticResource RedeemButton}" Margin="20"/>
 		
 		<!--Shop Image-->
 		<Image Source="ZingProfile.jpg" HorizontalOptions="Center" 
@@ -57,9 +57,7 @@
 		  	VerticalOptions="End"
 			TranslationY="50"
 		/>
-		
 
 	</Grid>
-	
 
 </ContentPage>
