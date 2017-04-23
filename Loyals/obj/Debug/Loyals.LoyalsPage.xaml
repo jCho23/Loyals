@@ -3,15 +3,16 @@
 	xmlns="http://xamarin.com/schemas/2014/forms" 
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
 	xmlns:local="clr-namespace:Loyals" 
-	x:Class="Loyals.LoyalsPage">
+	x:Class="Loyals.LoyalsPage"
+	BackgroundColor="{StaticResource BackgroundColor}">
 
 	<Grid RowSpacing="0">
 		<Grid.RowDefinitions>
-			<RowDefinition Height="Auto"/>
-			<RowDefinition Height="Auto"/>
-			<RowDefinition Height="Auto"/>
 			<RowDefinition Height="*"/>
-			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="AUTO"/>
+			<RowDefinition Height="AUTO"/>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="AUTO"/>
 		</Grid.RowDefinitions>
 
 		<!-- header background -->
@@ -23,8 +24,22 @@
 			<Label Text="Sandwich Shop" Style="{StaticResource ProfileTagLabel}"/>
 		</StackLayout>
 
+		<!--Points -->
+		<Grid Grid.Row="2">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="*"/>
+				<ColumnDefinition Width="*"/>
+				<ColumnDefinition Width="*"/>
+			</Grid.ColumnDefinitions>
 
-		<BoxView BackgroundColor="Green" Grid.Row="2"/>
+			<StackLayout Grid.Column="0">
+				<Label Text="33" Style="{StaticResource StatsNumberLabel}"/>
+				<Label Text="Likes" Style="{StaticResource StatsCaptionLabel}"/>
+			</StackLayout>
+
+		</Grid>
+
+
 
 		<BoxView BackgroundColor="Cyan" Grid.Row="3"/>
 

@@ -47,8 +47,26 @@
 				<Setter Property="FontFamily" Value="{StaticResource RegularFontFamily}" />
 				<Setter Property="FontSize" Value="{StaticResource TagTextFontSize}" />
 				<Setter Property="HorizontalTextAlignment" Value="Center" />
-
 			</Style>
+				
+			<Style x:Key="StatsNumberLabel" TargetType="Label">
+				<Setter Property="TextColor" Value="{StaticResource HeaderTextColor}" />
+				<Setter Property="HorizontalTextAlignment" Value="Center" />
+				<Setter Property="FontFamily" Value="{StaticResource LightFontFamily}" />
+				<Setter Property="FontSize" Value="{StaticResource StatsNumberFontSize}" />
+			</Style>
+
+			<Style x:Key="StatsNumberLabel" TargetType="Label">
+				<Setter Property="TextColor" Value="{StaticResource HeaderTextColor}" />
+				<Setter Property="HorizontalTextAlignment" Value="Center" />
+				<Setter Property="FontFamily" Value="{StaticResource LightFontFamily}" />
+				<Setter Property="FontSize" Value="{StaticResource StatsNumberFontSize}" />
+			</Style>
+
+
+
+
+			
 		</ResourceDictionary>
 	</Application.Resources>
 </Application>
