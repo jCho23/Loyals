@@ -24,3 +24,10 @@
 /Users/junecho/Projects/Loyals/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone8.4-10.3/actool/_BundleResourceWithLogicalName.items
 /Users/junecho/Projects/Loyals/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone8.4-10.3/optimized/HeaderBackground.png
 /Users/junecho/Projects/Loyals/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone8.4-10.3/optimized/
+/Users/junecho/Projects/Loyals/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone8.4-10.3/optimized/curved.png
+/Users/junecho/Projects/Loyals/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone9.2-10.3/ibtool/_BundleResourceWithLogicalName.items
+/Users/junecho/Projects/Loyals/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone9.2-10.3/actool/_PartialAppManifest.items
+/Users/junecho/Projects/Loyals/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone9.2-10.3/actool/_BundleResourceWithLogicalName.items
+/Users/junecho/Projects/Loyals/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone9.2-10.3/optimized/HeaderBackground.png
+/Users/junecho/Projects/Loyals/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone9.2-10.3/optimized/curved.png
+/Users/junecho/Projects/Loyals/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone9.2-10.3/optimized/

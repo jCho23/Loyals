@@ -32,3 +32,4 @@
 /Users/junecho/Projects/Loyals/Droid/bin/Debug/Xamarin.Forms.Xaml.dll
 /Users/junecho/Projects/Loyals/Droid/bin/Debug/Loyals.dll
 /Users/junecho/Projects/Loyals/Droid/bin/Debug/Loyals.dll.mdb
+/Users/junecho/Projects/Loyals/Droid/obj/Debug/res/drawable/curved.png

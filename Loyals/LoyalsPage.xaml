@@ -17,6 +17,7 @@
 
 		<!-- header background -->
 		<Image Source="HeaderBackground.png" Aspect="AspectFit" />
+	<!--	<Image Source="Curved.png" VerticalOptions="End" Aspect="Fill" />-->
 
 		<!--Shop Name -->
 		<StackLayout Grid.Row="1" Padding="0,50,0,0">
@@ -41,10 +42,27 @@
 			</StackLayout>
 		</Grid>
 
-		<!--Pictures-->
-		<Label Grid.Row="3" Text="BEST SANDWICHES EVER!"
-			Style="{StaticResource MainBodyLabel}" Margin="20,0"/>
-
+		<!--History-->
+		<ScrollView BackgroundColor="Transparent" Grid.Row="3">
+			<StackLayout  
+				Padding="0,50,0,0"
+				Spacing="5"
+				WidthRequest="400"
+	            HorizontalOptions="Center"
+	            VerticalOptions="CenterAndExpand"
+	            BackgroundColor="Transparent"
+			>
+				<Label Text="History" Style="{StaticResource ProfileNameLabel}" />
+				<Label Text="Sandwich and OJ = $30 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Center"/>
+				<Label Text="Sandwich and Cookie = $30 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Center"/>
+				<Label Text="Coffee and Brownie  = $30 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Center"/>
+				<Label Text="Sandwich and Drink = $30 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Center"/>
+				<Label Text="Sandwich and Cookie = $30 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Center"/>
+				<Label Text="Sandwich and OJ= $30 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Center"/>
+				<Label Text="Coffee and Brownie = $30 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Center"/>
+			</StackLayout>
+		</ScrollView>
+		
 		<!--Redeem Button-->
 		<Button Grid.Row="4" 
 			Text="Redeem Points"
