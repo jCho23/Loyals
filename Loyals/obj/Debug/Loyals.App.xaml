@@ -11,6 +11,7 @@
 			<Color x:Key="BodyTextColor">#C3C3C3</Color>
 			<Color x:Key="ButtonBackgroundColor">#85bb65</Color>
 			<Color x:Key="BackgroundColor">#FFFFFF</Color>
+			<Color x:Key="RedeemTextColor">#85bb65</Color>
 			
 			<!--Font Families-->
 			<OnPlatform x:Key="RegularFontFamily" x:TypeArguments="x:String">
@@ -52,7 +53,7 @@
 			</Style>
 				
 			<Style x:Key="StatsNumberLabel" TargetType="Label">
-				<Setter Property="TextColor" Value="{StaticResource HeaderTextColor}" />
+				<Setter Property="TextColor" Value="{StaticResource RedeemTextColor}" />
 				<Setter Property="HorizontalTextAlignment" Value="Center" />
 				<Setter Property="FontFamily" Value="{StaticResource LightFontFamily}" />
 				<Setter Property="FontSize" Value="{StaticResource StatsNumberFontSize}" />
