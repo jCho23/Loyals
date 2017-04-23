@@ -53,13 +53,13 @@
 	            BackgroundColor="Transparent"
 			>
 				<Label Text="History" Style="{StaticResource ProfileNameLabel}" />
-				<Label Text="Sandwich and OJ = $30 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Center"/>
-				<Label Text="Sandwich and Cookie = $30 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Center"/>
-				<Label Text="Coffee and Brownie  = $30 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Center"/>
-				<Label Text="Sandwich and Drink = $30 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Center"/>
-				<Label Text="Sandwich and Cookie = $30 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Center"/>
-				<Label Text="Sandwich and OJ= $30 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Center"/>
-				<Label Text="Coffee and Brownie = $30 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Center"/>
+				<Label Text="4/8    Sandwich and OJ = $30 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Center"/>
+				<Label Text="4/12    Sandwich and Cookie = $30 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Center"/>
+				<Label Text="4/14    Coffee and Brownie  = $30 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Center"/>
+				<Label Text="4/17    Sandwich and Drink = $30 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Center"/>
+				<Label Text="4/19    Sandwich and Cookie = $30 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Center"/>
+				<Label Text="4/23    Sandwich and OJ= $30 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Center"/>
+				<Label Text="4/25    Coffee and Brownie = $30 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Center"/>
 			</StackLayout>
 		</ScrollView>
 		
