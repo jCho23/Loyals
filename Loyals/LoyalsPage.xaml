@@ -7,11 +7,11 @@
 
 	<Grid RowSpacing="0">
 		<Grid.RowDefinitions>
-			<RowDefinition Height="Auto"/>
-			<RowDefinition Height="Auto"/>
-			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="AUTO"/>
+			<RowDefinition Height="AUTO"/>
+			<RowDefinition Height="AUTO"/>
 			<RowDefinition Height="*"/>
-			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="AUTO"/>
 		</Grid.RowDefinitions>
 
 		<!-- header background -->
