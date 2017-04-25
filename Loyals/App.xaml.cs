@@ -10,7 +10,9 @@ namespace Loyals
 		{
 			InitializeComponent();
 
-			MainPage = new LoyalsPage();
+			var storeToLoad = FakeService.GetStores()[0];
+
+			MainPage = new LoyalsPage(storeToLoad);
 		}
 
 		protected override void OnStart()

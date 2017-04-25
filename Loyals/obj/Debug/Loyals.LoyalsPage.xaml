@@ -10,22 +10,89 @@
 	<Grid RowSpacing="0">
 		<Grid.RowDefinitions>
 			<RowDefinition Height="*"/>
-			<RowDefinition Height="AUTO"/>
-			<RowDefinition Height="AUTO"/>
+			<RowDefinition Height="50"/>
+			<RowDefinition Height="30"/>
+			<RowDefinition Height="30"/>
 			<RowDefinition Height="*"/>
 			<RowDefinition Height="AUTO"/>
+			
+
 		</Grid.RowDefinitions>
-
+		<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="*"/>
+				<ColumnDefinition Width="*"/>
+			</Grid.ColumnDefinitions>
 		<!-- header background -->
-		<Image Source="HeaderBackground.png" Aspect="AspectFit" />
+		<Image Source="HeaderBackground.png" Aspect="AspectFill" 
+		Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
+		/>
 
-		<!--Shop Name -->
+		<!--Shop Image-->
+		<Image Source="ZingProfile.jpg" HorizontalOptions="Center" 
+			WidthRequest="100" 
+			HeightRequest="100"
+		  	VerticalOptions="End"
+			TranslationY="50"
+			Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
+		/>
+
+		
+		<Label Text="Zing Cafe" Style="{StaticResource ProfileNameLabel}"
+		Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"
+		/>
+		<Label Text="Sandwich Shop" Style="{StaticResource ProfileTagLabel}"
+		Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2"
+		/>
+
+		
+
+		<!--History-->
+		<ScrollView BackgroundColor="Green" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2"
+			>
+			<StackLayout  
+				Padding="10,0,10,0"
+				Spacing="4"
+
+	            HorizontalOptions="Fill"
+	            VerticalOptions="CenterAndExpand"
+	            BackgroundColor="Yellow"
+			>
+				<Label Text="History" Style="{StaticResource ProfileNameLabel}" />
+				<Label Text="4/8      Sandwich and OJ = $30 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Start"/>
+				<Label Text="4/12    Sandwich and Cookie = $30 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Start"/>
+				<Label Text="4/14    Coffee and Brownie  = $10 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Start"/>
+				<Label Text="4/17    Sandwich and Drink = $35 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Start"/>
+				<Label Text="4/19    Sandwich and Cookie = $30 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Start"/>
+				<Label Text="4/23    Sandwich and OJ= $30 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Start"/>
+				<Label Text="4/25    Coffee and Brownie = $10 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Start"/>
+				<Label Text="5/5      Coffee and Brownie  = $30 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Start"/>
+				<Label Text="5/12    Sandwich and Drink = $30 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Start"/>
+				<Label Text="5/17    Sandwich and Cookie = $30 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Start"/>
+				<Label Text="5/23    Sandwich and OJ= $30 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Start"/>
+				<Label Text="5/25    Coffee and Brownie = $35 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Start"/>
+			</StackLayout>
+		</ScrollView>
+
+		<!--Redeem Button-->
+		<Button Grid.Row="5" 
+			Text="Redeem Points"
+			Style="{StaticResource RedeemButton}" Margin="20"
+			Grid.Column="0" Grid.ColumnSpan="2"
+		/>
+
+
+
+
+
+		
+
+<!--
 		<StackLayout Grid.Row="1" Padding="0,50,0,0">
 			<Label Text="Zing Cafe" Style="{StaticResource ProfileNameLabel}"/>
 			<Label Text="Sandwich Shop" Style="{StaticResource ProfileTagLabel}"/>
 		</StackLayout>
 
-		<!--Points -->
+
 		<Grid Grid.Row="2" Margin="0,30" ColumnSpacing="0">
 			<Grid.ColumnDefinitions>
 				<ColumnDefinition Width="*"/>
@@ -42,7 +109,7 @@
 			</StackLayout>
 		</Grid>
 
-		<!--History-->
+	
 		<ScrollView BackgroundColor="Transparent" Grid.Row="3">
 			<StackLayout  
 				Padding="0,0,0,0"
@@ -68,18 +135,18 @@
 			</StackLayout>
 		</ScrollView>
 		
-		<!--Redeem Button-->
+
 		<Button Grid.Row="4" 
 			Text="Redeem Points"
 			Style="{StaticResource RedeemButton}" Margin="20"/>
 		
-		<!--Shop Image-->
+
 		<Image Source="ZingProfile.jpg" HorizontalOptions="Center" 
 			WidthRequest="100" 
 			HeightRequest="100"
 		  	VerticalOptions="End"
 			TranslationY="50"
-		/>
+		/>-->
 			
 	</Grid>
 
