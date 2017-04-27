@@ -42,14 +42,21 @@
 		<Label Text="Sandwich Shop" Style="{StaticResource ProfileTagLabel}"
 		Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2"/>
 
-	<!--	<Label Text="230" Style="{StaticResource StatsNumberLabel}"
-		Grid.Row="4" Margin="0,30" Grid.Column="0" Grid.ColumnSpan="2" ColumnSpacing="0"/>
-
+		<Label Text="230" Style="{StaticResource StatsNumberLabel}"
+		Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2"/>
+		
 		<Label Text="Points" Style="{StaticResource StatsCaptionLabel}"
-		Grid.Row="4" Margin="0,30" Grid.Column="0" Grid.ColumnSpan="2" ColumnSpacing="0"/>-->
+		Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2"/>
+
+		<Label Text="33" Style="{StaticResource StatsNumberLabel}"/>
+		Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2"/>
+
+		<Label Text="Points Needed" Style="{StaticResource StatsCaptionLabel}"/>
+		Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2"/>
+
 
 		<!--History-->
-		<ScrollView BackgroundColor="Green" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2"
+		<ScrollView BackgroundColor="Green" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2"
 			>
 			<StackLayout  
 				Padding="10,0,10,0"
@@ -76,7 +83,7 @@
 		</ScrollView>
 
 		<!--Redeem Button-->
-		<Button Grid.Row="5" 
+		<Button Grid.Row="6" 
 			Text="Redeem Points"
 			Style="{StaticResource RedeemButton}" Margin="20"
 			Grid.Column="0" Grid.ColumnSpan="2"
