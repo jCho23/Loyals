@@ -36,15 +36,17 @@
 			Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
 		/>
 
-		
 		<Label Text="Zing Cafe" Style="{StaticResource ProfileNameLabel}"
-		Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"
-		/>
-		<Label Text="Sandwich Shop" Style="{StaticResource ProfileTagLabel}"
-		Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2"
-		/>
-
+		Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"/>
 		
+		<Label Text="Sandwich Shop" Style="{StaticResource ProfileTagLabel}"
+		Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2"/>
+
+	<!--	<Label Text="230" Style="{StaticResource StatsNumberLabel}"
+		Grid.Row="4" Margin="0,30" Grid.Column="0" Grid.ColumnSpan="2" ColumnSpacing="0"/>
+
+		<Label Text="Points" Style="{StaticResource StatsCaptionLabel}"
+		Grid.Row="4" Margin="0,30" Grid.Column="0" Grid.ColumnSpan="2" ColumnSpacing="0"/>-->
 
 		<!--History-->
 		<ScrollView BackgroundColor="Green" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2"
