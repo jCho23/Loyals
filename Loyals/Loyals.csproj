@@ -42,6 +42,7 @@
     <Compile Include="Models\RewardsStore.cs" />
     <Compile Include="FakeService.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />
+    <Compile Include="ViewModels\LoyalsViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">
