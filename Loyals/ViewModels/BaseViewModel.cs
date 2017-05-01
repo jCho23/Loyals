@@ -17,7 +17,7 @@ namespace Loyals
 			{
 				PropertyChanged(this,
 					new PropertyChangedEventArgs(propertyName));
-			}attribute
+			}
 		}
 	}
 }

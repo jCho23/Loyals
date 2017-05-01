@@ -21,6 +21,11 @@ namespace Loyals
 			}
 		}
 
+		public void GetData()
+		{
+			PointsValue = "500";
+		}
+
 
 
 	}

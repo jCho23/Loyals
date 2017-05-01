@@ -12,7 +12,7 @@ namespace Loyals
 
 			var storeToLoad = FakeService.GetStores()[0];
 
-			MainPage = new LoyalsPage(storeToLoad);
+			MainPage = new LoyalsPage();
 		}
 
 		protected override void OnStart()
