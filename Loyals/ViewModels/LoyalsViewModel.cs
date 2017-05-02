@@ -21,12 +21,29 @@ namespace Loyals
 			}
 		}
 
-		public void GetData()
+		public void GetPointsData()
 		{
 			PointsValue = "500";
 		}
 
+		private string pointsNeeded;
+		public string PointsNeeded;
+		//properties ALWAYS has a GET or SET
+		{
+			get { return pointsNeeded; }
+			set
+			{
+				pointsNeeded = value;
 
+
+				OnPropertyChanged();
+			}
+		}
+
+		public void GetNeededData()
+		{
+			PointsNeeded = "23"     
+		}
 
 	}
 }

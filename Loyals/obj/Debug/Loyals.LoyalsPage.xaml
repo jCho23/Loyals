@@ -49,7 +49,7 @@
 		<Label Text="Points" Style="{StaticResource StatsCaptionLabel}"
 		Grid.Row="4" Grid.Column="0"/>
 
-		<Label Text="33" Style="{StaticResource StatsNumberLabel}"
+		<Label Text="{Binding PointsNeeded}" Style="{StaticResource StatsNumberLabel}"
 		Grid.Row="4" Grid.Column="1" Margin="10"/>
 
 		<Label Text="Points Needed" Style="{StaticResource StatsCaptionLabel}"

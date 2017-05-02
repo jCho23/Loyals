@@ -24,6 +24,7 @@ private LoyalsViewModel viewModel;
 
 			viewModel.GetPointsData();
 
+
 		}
 
 
