@@ -37,7 +37,7 @@
 			Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
 		/>
 
-		<Label Text="Zing Cafe" Style="{StaticResource ProfileNameLabel}"
+		<Label Text="{Binding BusinessName}" Style="{StaticResource ProfileNameLabel}"
 		Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"/>
 		
 		<Label Text="Sandwich Shop" Style="{StaticResource ProfileTagLabel}"
