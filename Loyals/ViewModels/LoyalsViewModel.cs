@@ -22,13 +22,6 @@ namespace Loyals
 
 		}
 
-		public void GetData()
-		{
-			PointsValue = "500";
-			PointsNeeded = "23";
-			BusinessName = "Zing Cafe";
-		}
-
 		private string pointsNeeded;
 		public string PointsNeeded
 		//properties ALWAYS has a GET or SET
@@ -57,5 +50,26 @@ namespace Loyals
 			}
 		}
 
+		private string BusinessType;
+		public string businessType
+		//properties ALWAYS has a GET or SET
+		{
+			get { return businessType; }
+			set
+			{
+				businessType = value;
+
+
+				OnPropertyChanged();
+			}
+		}
+
+		public void GetData()
+		{
+			PointsValue = "500";
+			PointsNeeded = "23";
+			BusinessName = "Zing Cafe";
+			BusinessType = "Sandwich Shop";
+		}
 	}
 }
