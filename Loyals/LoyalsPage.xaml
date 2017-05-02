@@ -29,7 +29,7 @@
 		/>
 
 		<!--Shop Image-->
-		<Image Source="ZingProfile.jpg" HorizontalOptions="Center" 
+		<Image Source="{Binding ProfilePicture}" HorizontalOptions="Center" 
 			WidthRequest="100" 
 			HeightRequest="100"
 		  	VerticalOptions="End"
@@ -50,7 +50,7 @@
 		Grid.Row="4" Grid.Column="0"/>
 
 		<Label Text="{Binding PointsNeeded}" Style="{StaticResource StatsNumberLabel}"
-		Grid.Row="4" Grid.Column="1" Margin="10"/>
+		Grid.Row="4" Grid.Column="1" Margin="10" TextColor="{Binding PointsNeededColor}"/>
 
 		<Label Text="Points Needed" Style="{StaticResource StatsCaptionLabel}"
 		Grid.Row="4" Grid.Column="1"/>
@@ -84,7 +84,8 @@
 		</ScrollView>
 
 		<!--Redeem Button-->
-		<Button Grid.Row="6" 
+		<Button x:Name="RedeemButton"
+			Grid.Row="6" 
 			Text="Redeem Points"
 			Style="{StaticResource RedeemButton}" Margin="20"
 			Grid.Column="0" Grid.ColumnSpan="2"

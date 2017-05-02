@@ -1,4 +1,5 @@
 ﻿using System;
+using Xamarin.Forms;
 namespace Loyals
 {
 	public class LoyalsViewModel : BaseViewModel
@@ -35,8 +36,8 @@ namespace Loyals
 			}
 		}
 
-		private string BusinessName;
-		public string businessName
+		private string businessName;
+		public string BusinessName
 		//properties ALWAYS has a GET or SET
 		{
 			get { return businessName; }
@@ -49,8 +50,8 @@ namespace Loyals
 			}
 		}
 
-		private string BusinessType;
-		public string businessType
+		private string businessType;
+		public string BusinessType
 		//properties ALWAYS has a GET or SET
 		{
 			get { return businessType; }
@@ -63,12 +64,49 @@ namespace Loyals
 			}
 		}
 
+		private ImageSource profilePicture;
+		public ImageSource ProfilePicture
+		{
+			get { return profilePicture; }
+			set
+			{
+				profilePicture = value;
+
+				OnPropertyChanged();
+			}
+
+		}
+
+		private Color pointsNeededColor;
+		public Color PointsNeededColor
+		{
+			get { return pointsNeededColor; }
+			set
+			{
+				pointsNeededColor = value;
+
+				OnPropertyChanged();
+			}
+		}
+
+
+
 		public void GetData()
 		{
 			PointsValue = "330";
 			PointsNeeded = "23";
 			BusinessName = "Zing Cafe";
 			BusinessType = "Sandwich Shop";
+			PointsNeededColor = Color.Red;
+			ProfilePicture = "ZingProfile.jpg";
+		}
+
+		public void UpdateDate(object sender, EventArgs e)
+		{
+			PointsValue = "111";
+			PointsNeeded = "222";
+			BusinessName = "Different place";
+			BusinessType = "Barber Shop";
 		}
 	}
 }

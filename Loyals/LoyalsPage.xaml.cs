@@ -13,10 +13,10 @@ namespace Loyals
 			viewModel = new LoyalsViewModel();
 			BindingContext = viewModel;
 
+			RedeemButton.Clicked += viewModel.UpdateDate;
 		}
 
 private LoyalsViewModel viewModel;
-
 
 		protected override void OnAppearing()
 		{
