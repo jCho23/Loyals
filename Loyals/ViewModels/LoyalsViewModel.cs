@@ -24,7 +24,6 @@ namespace Loyals
 
 		private string pointsNeeded;
 		public string PointsNeeded
-		//properties ALWAYS has a GET or SET
 		{
 			get { return pointsNeeded; }
 			set
@@ -32,13 +31,16 @@ namespace Loyals
 				pointsNeeded = value;
 
 
-				OnPropertyChanged();
+                OnPropertyChanged();
+				OnPropertyChanged("PointsNeededColor");
+				//If you don't pass the property name, the default is the CallerMemberName 
+				//(see in BaseViewModel)
+
 			}
 		}
 
 		private string businessName;
 		public string BusinessName
-		//properties ALWAYS has a GET or SET
 		{
 			get { return businessName; }
 			set
@@ -52,7 +54,6 @@ namespace Loyals
 
 		private string businessType;
 		public string BusinessType
-		//properties ALWAYS has a GET or SET
 		{
 			get { return businessType; }
 			set
@@ -77,19 +78,21 @@ namespace Loyals
 
 		}
 
-		private Color pointsNeededColor;
 		public Color PointsNeededColor
 		{
-			get { return pointsNeededColor; }
-			set
-			{
-				pointsNeededColor = value;
+			get {
 
-				OnPropertyChanged();
+				if (string.IsNullOrEmpty(PointsNeeded))
+					return Color.Green;
+
+				var pointsValue = Convert.ToDouble(PointsNeeded);
+
+				if (pointsValue > 50)
+					return Color.Green;
+				else
+					return Color.Red;
 			}
 		}
-
-
 
 		public void GetData()
 		{
@@ -97,7 +100,6 @@ namespace Loyals
 			PointsNeeded = "23";
 			BusinessName = "Zing Cafe";
 			BusinessType = "Sandwich Shop";
-			PointsNeededColor = Color.Red;
 			ProfilePicture = "ZingProfile.jpg";
 		}
 
