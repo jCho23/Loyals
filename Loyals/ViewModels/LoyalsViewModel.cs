@@ -65,7 +65,7 @@ namespace Loyals
 
 		public void GetData()
 		{
-			PointsValue = "500";
+			PointsValue = "330";
 			PointsNeeded = "23";
 			BusinessName = "Zing Cafe";
 			BusinessType = "Sandwich Shop";
