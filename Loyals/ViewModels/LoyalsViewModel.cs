@@ -19,15 +19,18 @@ namespace Loyals
 
 				OnPropertyChanged();
 			}
+
 		}
 
-		public void GetPointsData()
+		public void GetData()
 		{
 			PointsValue = "500";
+			PointsNeeded = "23";
+			BusinessName = "Zing Cafe";
 		}
 
 		private string pointsNeeded;
-		public string PointsNeeded;
+		public string PointsNeeded
 		//properties ALWAYS has a GET or SET
 		{
 			get { return pointsNeeded; }
@@ -40,9 +43,18 @@ namespace Loyals
 			}
 		}
 
-		public void GetNeededData()
+		private string BusinessName;
+		public string businessName
+		//properties ALWAYS has a GET or SET
 		{
-			PointsNeeded = "23"     
+			get { return businessName; }
+			set
+			{
+				businessName = value;
+
+
+				OnPropertyChanged();
+			}
 		}
 
 	}
