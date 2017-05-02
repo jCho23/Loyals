@@ -22,7 +22,7 @@ private LoyalsViewModel viewModel;
 		{
 			base.OnAppearing();
 
-			viewModel.GetData();
+			viewModel.GetPointsData();
 
 		}
 
