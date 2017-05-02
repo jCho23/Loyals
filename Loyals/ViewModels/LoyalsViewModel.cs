@@ -19,7 +19,6 @@ namespace Loyals
 
 				OnPropertyChanged();
 			}
-
 		}
 
 		private string pointsNeeded;
