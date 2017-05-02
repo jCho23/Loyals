@@ -65,7 +65,7 @@
 
 	            HorizontalOptions="Fill"
 	            VerticalOptions="CenterAndExpand"
-	            BackgroundColor="Yellow"
+	            BackgroundColor="Transparent"
 			>
 				<Label Text="History" Style="{StaticResource ProfileNameLabel}" />
 				<Label Text="4/8      Sandwich and OJ = $30 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Start"/>

@@ -37,10 +37,10 @@
 			Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
 		/>
 
-		<Label Text="Zing Cafe" Style="{StaticResource ProfileNameLabel}"
+		<Label Text="{Binding BusinessName}" Style="{StaticResource ProfileNameLabel}"
 		Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"/>
 		
-		<Label Text="Sandwich Shop" Style="{StaticResource ProfileTagLabel}"
+		<Label Text="{Binding BusinessType}" Style="{StaticResource ProfileTagLabel}"
 		Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2"/>
 
 		<Label Text="{Binding PointsValue}" Style="{StaticResource StatsNumberLabel}"
@@ -65,7 +65,7 @@
 
 	            HorizontalOptions="Fill"
 	            VerticalOptions="CenterAndExpand"
-	            BackgroundColor="Yellow"
+	            BackgroundColor="Transparent"
 			>
 				<Label Text="History" Style="{StaticResource ProfileNameLabel}" />
 				<Label Text="4/8      Sandwich and OJ = $30 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Start"/>
