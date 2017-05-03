@@ -34,8 +34,7 @@ namespace Loyals
                 OnPropertyChanged();
 				OnPropertyChanged("PointsNeededColor");
 				//If you don't pass the property name, the default is the CallerMemberName 
-				//(see in BaseViewModel)
-
+				//Example: (see in BaseViewModel)
 			}
 		}
 
