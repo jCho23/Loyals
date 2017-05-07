@@ -57,7 +57,7 @@
 
 
 		<!--History-->
-		<ScrollView BackgroundColor="Transparent" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2"
+		<ScrollView BackgroundColor="Gray" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2"
 			>
 			<StackLayout  
 				Padding="10,0,10,0"
