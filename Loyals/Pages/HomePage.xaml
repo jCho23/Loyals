@@ -15,10 +15,28 @@
 			<RowDefinition Height="AUTO"/>
 			<RowDefinition Height="AUTO"/>
 			<RowDefinition Height="AUTO"/>
+			<RowDefinition Height="AUTO"/>
+			
 	
 		</Grid.RowDefinitions>
 
 
+		<Label Text="Points" Style="{StaticResource StatsCaptionLabel}"
+		Grid.Row="0" Grid.Column="0" BackgroundColor="Aqua"/>
+		<Label Text="Points" Style="{StaticResource StatsCaptionLabel}"
+		Grid.Row="1" Grid.Column="0" BackgroundColor="Fuchsia"/>
+		<Label Text="Points" Style="{StaticResource StatsCaptionLabel}"
+		Grid.Row="2" Grid.Column="0" BackgroundColor="Lime"/>
+		<Label Text="Points" Style="{StaticResource StatsCaptionLabel}"
+		Grid.Row="3" Grid.Column="0" BackgroundColor="Maroon"/>
+		<Label Text="Points" Style="{StaticResource StatsCaptionLabel}"
+		Grid.Row="4" Grid.Column="0" BackgroundColor="Red"/>
+		<Label Text="Points" Style="{StaticResource StatsCaptionLabel}"
+		Grid.Row="5" Grid.Column="0" BackgroundColor="Silver"/>
+		<Label Text="Points" Style="{StaticResource StatsCaptionLabel}"
+		Grid.Row="6" Grid.Column="0" BackgroundColor="Black"/>
+		<Label Text="Points" Style="{StaticResource StatsCaptionLabel}"
+		Grid.Row="7" Grid.Column="0" BackgroundColor="Yellow"/>
 
 		</Grid>/>
 			
