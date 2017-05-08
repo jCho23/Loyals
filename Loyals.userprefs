@@ -3,15 +3,15 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Loyals/Pages/LoyalsPage.xaml.cs">
     <Files>
       <File FileName="Loyals/App.xaml.cs" Line="34" Column="1" />
-      <File FileName="Loyals/ViewModels/BaseViewModel.cs" Line="13" Column="45" />
+      <File FileName="Loyals/ViewModels/BaseViewModel.cs" Line="5" Column="2" />
       <File FileName="Droid/MainActivity.cs" Line="1" Column="1" />
       <File FileName="Loyals/App.xaml" Line="3" Column="1" />
       <File FileName="Loyals/Pages/LoyalsPage.xaml" Line="1" Column="1" />
       <File FileName="Loyals/ViewModels/LoyalsViewModel.cs" Line="101" Column="7" />
       <File FileName="Loyals/FakeService.cs" Line="1" Column="1" />
-      <File FileName="Loyals/Pages/HomePage.xaml" Line="1" Column="1" />
       <File FileName="Loyals/Pages/HomePage.xaml.cs" Line="1" Column="1" />
-      <File FileName="Loyals/Pages/LoyalsPage.xaml.cs" Line="4" Column="2" />
+      <File FileName="Loyals/Pages/LoyalsPage.xaml.cs" Line="2" Column="1" />
+      <File FileName="Loyals/Pages/HomePage.xaml" Line="5" Column="5" NotebookId="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
