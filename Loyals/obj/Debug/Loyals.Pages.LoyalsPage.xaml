@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	xmlns:local="clr-namespace:Loyals" 
+	x:Class="Loyals.LoyalsPage"
+	BackgroundColor="{StaticResource BackgroundColor}">
+
+	
+	<Grid RowSpacing="0">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="50"/>
+			<RowDefinition Height="30"/>
+			<RowDefinition Height="30"/>
+			<RowDefinition Height="AUTO"/>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="AUTO"/>
+			
+
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="*"/>
+				<ColumnDefinition Width="*"/>
+			</Grid.ColumnDefinitions>
+		<!-- header background -->
+		<Image Source="HeaderBackground.png" Aspect="AspectFill" 
+		Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
+		/>
+
+		<!--Shop Image-->
+		<Image Source="{Binding ProfilePicture}" HorizontalOptions="Center" 
+			WidthRequest="100" 
+			HeightRequest="100"
+		  	VerticalOptions="End"
+			TranslationY="50"
+			Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
+		/>
+
+		<Label Text="{Binding BusinessName}" Style="{StaticResource ProfileNameLabel}"
+		Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"/>
+		
+		<Label Text="{Binding BusinessType}" Style="{StaticResource ProfileTagLabel}"
+		Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2"/>
+
+		<Label Text="{Binding PointsValue}" Style="{StaticResource StatsNumberLabel}"
+		Grid.Row="4" Grid.Column="0" Margin="0,10,0,0"/>
+		
+		<Label Text="Points" Style="{StaticResource StatsCaptionLabel}"
+		Grid.Row="4" Grid.Column="0"/>
+
+		<Label Text="{Binding PointsNeeded}" Style="{StaticResource StatsNumberLabel}"
+		Grid.Row="4" Grid.Column="1" Margin="10" TextColor="{Binding PointsNeededColor}"/>
+
+		<Label Text="Points Needed" Style="{StaticResource StatsCaptionLabel}"
+		Grid.Row="4" Grid.Column="1"/>
+
+
+		<!--History-->
+		<ScrollView BackgroundColor="Gray" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2"
+			>
+			<StackLayout  
+				Padding="10,0,10,0"
+				Spacing="4"
+
+	            HorizontalOptions="Fill"
+	            VerticalOptions="CenterAndExpand"
+	            BackgroundColor="Transparent"
+			>
+				<Label Text="History" Style="{StaticResource ProfileNameLabel}" />
+				<Label Text="4/8      Sandwich and OJ = $30 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Start"/>
+				<Label Text="4/12    Sandwich and Cookie = $30 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Start"/>
+				<Label Text="4/14    Coffee and Brownie  = $10 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Start"/>
+				<Label Text="4/17    Sandwich and Drink = $35 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Start"/>
+				<Label Text="4/19    Sandwich and Cookie = $30 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Start"/>
+				<Label Text="4/23    Sandwich and OJ= $30 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Start"/>
+				<Label Text="4/25    Coffee and Brownie = $10 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Start"/>
+				<Label Text="5/5      Coffee and Brownie  = $30 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Start"/>
+				<Label Text="5/12    Sandwich and Drink = $30 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Start"/>
+				<Label Text="5/17    Sandwich and Cookie = $30 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Start"/>
+				<Label Text="5/23    Sandwich and OJ= $30 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Start"/>
+				<Label Text="5/25    Coffee and Brownie = $35 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Start"/>
+			</StackLayout>
+		</ScrollView>
+
+		<!--Redeem Button-->
+		<Button x:Name="RedeemButton"
+			Grid.Row="6" 
+			Text="Redeem Points"
+			Style="{StaticResource RedeemButton}" Margin="20"
+			Grid.Column="0" Grid.ColumnSpan="2"
+		/>
+
+
+
+
+
+		
+
+<!--
+		<StackLayout Grid.Row="1" Padding="0,50,0,0">
+			<Label Text="Zing Cafe" Style="{StaticResource ProfileNameLabel}"/>
+			<Label Text="Sandwich Shop" Style="{StaticResource ProfileTagLabel}"/>
+		</StackLayout>
+
+
+		<Grid Grid.Row="2" Margin="0,30" ColumnSpacing="0">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="*"/>
+				<ColumnDefinition Width="*"/>
+			</Grid.ColumnDefinitions>
+
+			<StackLayout Grid.Column="0">
+				<Label Text="230" Style="{StaticResource StatsNumberLabel}"/>
+				<Label Text="Points" Style="{StaticResource StatsCaptionLabel}"/>
+			</StackLayout>
+				<StackLayout Grid.Column="1">
+				<Label Text="33" Style="{StaticResource StatsNumberLabel}"/>
+				<Label Text="Points Needed" Style="{StaticResource StatsCaptionLabel}"/>
+			</StackLayout>
+		</Grid>
+
+	
+		<ScrollView BackgroundColor="Transparent" Grid.Row="3">
+			<StackLayout  
+				Padding="0,0,0,0"
+				Spacing="4"
+				WidthRequest="400"
+	            HorizontalOptions="Center"
+	            VerticalOptions="CenterAndExpand"
+	            BackgroundColor="Transparent"
+			>
+				<Label Text="History" Style="{StaticResource ProfileNameLabel}" />
+				<Label Text="4/8    Sandwich and OJ = $30 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Center"/>
+				<Label Text="4/12    Sandwich and Cookie = $30 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Center"/>
+				<Label Text="4/14    Coffee and Brownie  = $10 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Center"/>
+				<Label Text="4/17    Sandwich and Drink = $35 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Center"/>
+				<Label Text="4/19    Sandwich and Cookie = $30 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Center"/>
+				<Label Text="4/23    Sandwich and OJ= $30 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Center"/>
+				<Label Text="4/25    Coffee and Brownie = $10 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Center"/>
+				<Label Text="5/5    Coffee and Brownie  = $30 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Center"/>
+				<Label Text="5/12    Sandwich and Drink = $30 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Center"/>
+				<Label Text="5/17    Sandwich and Cookie = $30 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Center"/>
+				<Label Text="5/23    Sandwich and OJ= $30 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Center"/>
+				<Label Text="5/25    Coffee and Brownie = $35 Points!" Style="{StaticResource ProfileTagLabel}" HorizontalOptions="Center"/>
+			</StackLayout>
+		</ScrollView>
+		
+
+		<Button Grid.Row="4" 
+			Text="Redeem Points"
+			Style="{StaticResource RedeemButton}" Margin="20"/>
+		
+
+		<Image Source="ZingProfile.jpg" HorizontalOptions="Center" 
+			WidthRequest="100" 
+			HeightRequest="100"
+		  	VerticalOptions="End"
+			TranslationY="50"
+		/>-->
+			
+	</Grid>
+
+</ContentPage>

@@ -10,3 +10,7 @@
 /Users/junecho/Projects/Loyals/Loyals/bin/Debug/Xamarin.Forms.Core.dll
 /Users/junecho/Projects/Loyals/Loyals/bin/Debug/Xamarin.Forms.Platform.dll
 /Users/junecho/Projects/Loyals/Loyals/bin/Debug/Xamarin.Forms.Xaml.dll
+/Users/junecho/Projects/Loyals/Loyals/obj/Debug/Loyals.Pages.LoyalsPage.xaml
+/Users/junecho/Projects/Loyals/Loyals/obj/Debug/Loyals.Pages.HomePage.xaml
+/Users/junecho/Projects/Loyals/Loyals/obj/Debug/Loyals.Pages.LoyalsPage.xaml.g.cs
+/Users/junecho/Projects/Loyals/Loyals/obj/Debug/Loyals.Pages.HomePage.xaml.g.cs
