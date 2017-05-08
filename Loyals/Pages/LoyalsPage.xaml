@@ -19,9 +19,10 @@
 		</Grid.RowDefinitions>
 		
 		<Grid.ColumnDefinitions>
-				<ColumnDefinition Width="*"/>
-				<ColumnDefinition Width="*"/>
-			</Grid.ColumnDefinitions>
+			<ColumnDefinition Width="*"/>
+			<ColumnDefinition Width="*"/>
+		</Grid.ColumnDefinitions>
+
 		<!-- header background -->
 		<Image Source="HeaderBackground.png" Aspect="AspectFill" 
 		Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
