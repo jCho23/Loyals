@@ -8,15 +8,21 @@
 
 		<Grid RowSpacing="0">
 			<Grid.RowDefinitions>
-				<RowDefinition Height="AUTO"/>
-				<RowDefinition Height="AUTO"/>
-				<RowDefinition Height="AUTO"/>
-				<RowDefinition Height="AUTO"/>
-				<RowDefinition Height="AUTO"/>
-				<RowDefinition Height="AUTO"/>
-				<RowDefinition Height="AUTO"/>
-				<RowDefinition Height="AUTO"/>
+				<RowDefinition Height="*"/>
+				<RowDefinition Height="*"/>
+				<RowDefinition Height="*"/>
+				<RowDefinition Height="*"/>
+				<RowDefinition Height="*"/>
+				<RowDefinition Height="*"/>
+				<RowDefinition Height="*"/>
+				<RowDefinition Height="*"/>
 			</Grid.RowDefinitions>
+
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="*"/>
+			<ColumnDefinition Width="*"/>
+		</Grid.ColumnDefinitions>
+
 
 
 		<Label Text="0" Style="{StaticResource StatsCaptionLabel}"
@@ -29,7 +35,7 @@
 		Grid.Row="2" Grid.Column="0" BackgroundColor="Lime"/>
 		
 		<Label Text="3" Style="{StaticResource StatsCaptionLabel}"
-		Grid.Row="3" Grid.Column="0" BackgroundColor="Maroon"/>
+		Grid.Row="3" Grid.Column="0" BackgroundColor="Purple"/>
 		
 		<Label Text="4" Style="{StaticResource StatsCaptionLabel}"
 		Grid.Row="4" Grid.Column="0" BackgroundColor="Red"/>
