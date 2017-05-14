@@ -1,24 +1,14 @@
 ﻿<Properties StartupConfiguration="{10FDB463-0D63-4F37-8503-5C2759B4E31F}|Default">
   <MonoDevelop.Ide.ItemProperties.Loyals.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.C3B4EDC3-47DA-4171-9039-237AEE93D965" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Loyals/Pages/LoyalsPage.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Loyals/Pages/HomePage.xaml">
     <Files>
-      <File FileName="Loyals/App.xaml.cs" Line="34" Column="1" />
-      <File FileName="Loyals/ViewModels/BaseViewModel.cs" Line="5" Column="2" />
-      <File FileName="Droid/MainActivity.cs" Line="1" Column="1" />
-      <File FileName="Loyals/App.xaml" Line="3" Column="1" />
-      <File FileName="Loyals/Pages/LoyalsPage.xaml" Line="18" Column="34" />
-      <File FileName="Loyals/ViewModels/LoyalsViewModel.cs" Line="101" Column="7" />
-      <File FileName="Loyals/FakeService.cs" Line="1" Column="1" />
-      <File FileName="Loyals/Pages/HomePage.xaml.cs" Line="1" Column="1" />
-      <File FileName="Loyals/Pages/LoyalsPage.xaml.cs" Line="2" Column="1" />
-      <File FileName="Loyals/Pages/HomePage.xaml" Line="17" Column="35" NotebookId="1" />
+      <File FileName="Loyals/Pages/LoyalsPage.xaml" Line="1" Column="1" />
+      <File FileName="Loyals/Pages/HomePage.xaml" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <RunToCursorBreakpoint file="/Users/junecho/Projects/Loyals/Loyals/Pages/HomePage.xaml" relfile="Loyals/Pages/HomePage.xaml" line="21" column="8" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.Loyals.Droid PreferredExecutionTarget="Android.Nexus_5X_API_23" />
