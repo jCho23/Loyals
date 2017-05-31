@@ -10,7 +10,7 @@ namespace Loyals.Pages
 
         public FirstPage()
         {
-            Label header = new Label
+            Label header = new Label()
             {
                 Text = "ListView",
                 FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
@@ -18,7 +18,7 @@ namespace Loyals.Pages
             };
 
 
-            List<Business> businesses = new List<Business>
+            List<Business> businesses = new List<Business>()
             {
                 new Business("Zing Cafe", new DateTime(2017, 5, 15)),
 
@@ -32,6 +32,12 @@ namespace Loyals.Pages
                 ItemsSource = businesses,
 
             };
+
+            //When you are in the the constructor, you have an instance of that class (first page)
+this.
+
+
+
         }
 	}
 }
