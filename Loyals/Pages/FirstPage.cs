@@ -30,13 +30,26 @@ namespace Loyals.Pages
             {
                 // Source of data items.
                 ItemsSource = businesses,
-
+                //ItemTemplate need to set to data template of view cell
             };
 
             //When you are in the the constructor, you have an instance of that class (first page)
-this.
 
+            var newLayoutInstance = new StackLayout();
+            newLayoutInstance.Children.Add(header);
+            newLayoutInstance.Children.Add(listView);
 
+            Content = new StackLayout()
+            {
+                Children = {
+                    header,
+                    listView
+                }
+
+            };
+                
+
+            //define item tem
 
         }
 	}
