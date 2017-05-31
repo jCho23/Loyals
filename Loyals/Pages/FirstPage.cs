@@ -1,28 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using Xamarin.Forms;
+using Loyals.Models;
 
 namespace Loyals.Pages
 {
-    public class FirstPage
+    public class FirstPage : ContentPage
     {
-		class BusinessName
-		{
-			public BusinessName(string name, DateTime lastVisit)
-			{
-				this.Name = name;
-				this.LastVisit = lastVisit;
-			}
 
-			public string Name { private set; get; }
-
-			public DateTime LastVisit { private set; get; }
-
-			public Color FavoriteColor { private set; get; }
-		};
-
-
-        public Businesses()
+        public FirstPage()
         {
             Label header = new Label
             {
@@ -30,23 +16,22 @@ namespace Loyals.Pages
                 FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
                 HorizontalOptions = LayoutOptions.Center
             };
+
+
+            List<Business> businesses = new List<Business>
+            {
+                new Business("Zing Cafe", new DateTime(2017, 5, 15)),
+
+                new Business("La Petite Hair Salon", new DateTime(2017, 5, 16))
+            };
+
+
+            ListView listView = new ListView
+            {
+                // Source of data items.
+                ItemsSource = businesses,
+
+            };
         }
-
-        List<BusinessName> businessName = new List<BusinessName>
-			{
-            new BusinessName("Zing Cafe", new DateTime(2017, 5, 15), Color.Aqua),
-		
-            new BusinessName("La Petite Hair Salon", new DateTime(2017, 5, 16), Color.Purple)
-				
-			};
-
-
-        ListView listView = new ListView
-        {
-            // Source of data items.
-            ItemsSource = businessName,
-
-        };
-
 	}
 }
