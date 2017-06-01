@@ -9,9 +9,10 @@
 	<ListView x:Name="list" ItemsSource="{}" ItemTapped="OnItemSelected" RowHeight="55">
 		<ListView.ItemTemplate>
             <DataTemplate>
-                <ViewCell>
+                <ImageCell>
                     
                     <Grid Padding="5">
+                        
                         <Grid.RowDefinitions>
                             <RowDefinition Height="45"></RowDefinition>
                         </Grid.RowDefinitions>
@@ -20,11 +21,14 @@
                             <ColumnDefinition Width="*"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
                             
-
-
-
                     </Grid>
-                </ViewCell>
+
+                     <Label Grid.Row="0" Grid.Column="0" Text="{Binding Name}" LineBreakMode="TailTruncation"></Label>
+
+                    
+
+                    
+                </ImageCell>
             </DataTemplate>
 		</ListView.ItemTemplate>
 	</ListView>
