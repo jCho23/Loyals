@@ -6,7 +6,7 @@
     x:Class="Loyals.HomePage" 
     BackgroundColor="{StaticResource BackgroundColor}">
     
-	<ListView x:Name="list" ItemsSource="{Binding Monkeys}" ItemTapped="OnItemSelected" RowHeight="55">
+	<ListView x:Name="list" ItemsSource="{}" ItemTapped="OnItemSelected" RowHeight="55">
 		<ListView.ItemTemplate>
             <DataTemplate>
                 <ViewCell>
