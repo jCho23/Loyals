@@ -1,57 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage 
-	xmlns="http://xamarin.com/schemas/2014/forms" 
-	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-	xmlns:local="clr-namespace:Loyals"
-	x:Class="Loyals.HomePage"
-	BackgroundColor="{StaticResource BackgroundColor}">
-
-		<Grid RowSpacing="0">
-			<Grid.RowDefinitions>
-				<RowDefinition Height="*"/>
-				<RowDefinition Height="*"/>
-				<RowDefinition Height="*"/>
-				<RowDefinition Height="*"/>
-				<RowDefinition Height="*"/>
-				<RowDefinition Height="*"/>
-				<RowDefinition Height="*"/>
-				<RowDefinition Height="*"/>
-			</Grid.RowDefinitions>
-
-		<Grid.ColumnDefinitions>
-			<ColumnDefinition Width="*"/>
-			<ColumnDefinition Width="*"/>
-		</Grid.ColumnDefinitions>
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:local="clr-namespace:Loyals" 
+    x:Class="Loyals.HomePage" 
+    BackgroundColor="{StaticResource BackgroundColor}">
+    
+	<ListView x:Name="list" ItemsSource="{Binding Monkeys}" ItemTapped="OnItemSelected" RowHeight="55">
+		<ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <Grid Padding="5">
 
 
 
-		<Label Text="0" Style="{StaticResource StatsCaptionLabel}"
-		Grid.Row="0" Grid.Column="0" BackgroundColor="Aqua"/>
-		
-		<Label Text="1" Style="{StaticResource StatsCaptionLabel}"
-		Grid.Row="1" Grid.Column="0" BackgroundColor="Fuchsia"/>
-		
-		<Label Text="2" Style="{StaticResource StatsCaptionLabel}"
-		Grid.Row="2" Grid.Column="0" BackgroundColor="Lime"/>
-		
-		<Label Text="3" Style="{StaticResource StatsCaptionLabel}"
-		Grid.Row="3" Grid.Column="0" BackgroundColor="Purple"/>
-		
-		<Label Text="4" Style="{StaticResource StatsCaptionLabel}"
-		Grid.Row="4" Grid.Column="0" BackgroundColor="Red"/>
-		
-		<Label Text="5" Style="{StaticResource StatsCaptionLabel}"
-		Grid.Row="5" Grid.Column="0" BackgroundColor="Silver"/>
-		
-		<Label Text="6" Style="{StaticResource StatsCaptionLabel}"
-		Grid.Row="6" Grid.Column="0" BackgroundColor="Black"/>
-		
-		<Label Text="7" Style="{StaticResource StatsCaptionLabel}"
-		Grid.Row="7" Grid.Column="0" BackgroundColor="Yellow"/>
 
 
-	
-	
-	</Grid>
-	
+
+                    </Grid>
+                </ViewCell>
+            </DataTemplate>
+		</ListView.ItemTemplate>
+	</ListView>
 </ContentPage>
