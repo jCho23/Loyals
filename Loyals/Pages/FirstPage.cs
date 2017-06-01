@@ -41,16 +41,14 @@ namespace Loyals.Pages
 
             Content = new StackLayout()
             {
-                Children = {
+                Children = 
+                {
                     header,
                     listView
                 }
 
             };
                 
-
-            //define item tem
-
         }
 	}
 }

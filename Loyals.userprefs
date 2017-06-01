@@ -2,7 +2,7 @@
   <MonoDevelop.Ide.ItemProperties.Loyals.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.C3B4EDC3-47DA-4171-9039-237AEE93D965" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Loyals/Pages/FirstPage.cs">
     <Files>
-      <File FileName="Loyals/Pages/LoyalsPage.xaml" Line="40" Column="21" />
+      <File FileName="Loyals/Pages/LoyalsPage.xaml" Line="165" Column="1" />
       <File FileName="Loyals/Pages/FirstPage.cs" Line="33" Column="73" />
       <File FileName="Loyals/Pages/LoyalsPage.xaml.cs" Line="7" Column="22" />
       <File FileName="Loyals/Models/Business.cs" Line="4" Column="23" NotebookId="1" />

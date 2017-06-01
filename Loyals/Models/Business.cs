@@ -10,7 +10,7 @@ namespace Loyals.Models
 		}
 
 		public string Name 
-        //Name is a type of 'String'
+        //Name is a TYPE of 'String'
         { 
             private set; 
             get; 
