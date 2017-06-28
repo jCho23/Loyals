@@ -7,6 +7,7 @@ namespace Loyals.Pages
 {
     public class FirstPage : ContentPage
     {
+        Button checkPointsButton = new Button { Text = "Check Points" };
 
         public FirstPage()
         {
@@ -33,18 +34,22 @@ namespace Loyals.Pages
                 //ItemTemplate need to set to data template of view cell
             };
 
+
+
             //When you are in the the constructor, you have an instance of that class (first page)
 
             var newLayoutInstance = new StackLayout();
             newLayoutInstance.Children.Add(header);
             newLayoutInstance.Children.Add(listView);
+            newLayoutInstance.Children.Add(checkPointsButton);
 
             Content = new StackLayout()
             {
                 Children = 
                 {
                     header,
-                    listView
+                    listView,
+                    checkPointsButton
                 }
 
             };
