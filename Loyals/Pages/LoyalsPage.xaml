@@ -34,7 +34,7 @@
 			HeightRequest="100"
 		  	VerticalOptions="End"
 			TranslationY="50"
-			Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
+			Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"
 		/>
 
 		<Label Text="{Binding BusinessName}" Style="{StaticResource ProfileNameLabel}"

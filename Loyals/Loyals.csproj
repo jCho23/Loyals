@@ -30,9 +30,6 @@
   <ItemGroup>
     <EmbeddedResource Include="App.xaml" />
     <EmbeddedResource Include="Pages\LoyalsPage.xaml" />
-    <EmbeddedResource Include="Pages\HomePage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -46,11 +43,9 @@
     <Compile Include="Pages\LoyalsPage.xaml.cs">
       <DependentUpon>LoyalsPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\HomePage.xaml.cs">
-      <DependentUpon>HomePage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Pages\FirstPage.cs" />
     <Compile Include="Models\Business.cs" />
+    <Compile Include="ViewModels\FirstPageViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">
