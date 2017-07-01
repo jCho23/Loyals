@@ -3,17 +3,18 @@
 using Xamarin.Forms;
 using Loyals.Pages;
 using Loyals.Database;
+using Loyals.DataBase;
 
 namespace Loyals
 {
 	public class App : Application
 	{
-		public static DogRepository DogRepo { get; private set; }
+        public static BusinessRepo BusinessRepo { get; private set; }
 
 		public App()
 		{
-			string dbPath = FileAccessHelper.GetLocalFilePath("people4.db3");
-			DogRepo = new DogRepository(dbPath);
+			string dbPath = FileAccessHelper.GetLocalFilePath("Loyals1.db3");
+            BusinessRepo = new BusinessRepo(dbPath);
 			// DogRepo.AddNewDog("Olive", "Black");
 			// The root page of your application
 			MainPage = new NavigationPage(new FirstPage());

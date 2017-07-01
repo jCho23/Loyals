@@ -1,7 +1,7 @@
 ﻿using System;
 namespace Loyals.ViewModels
 {
-    public class FirstPageViewModel
+    public class FirstPageViewModel : BaseViewModel
     {
         public FirstPageViewModel()
         {

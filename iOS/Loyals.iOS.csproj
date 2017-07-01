@@ -121,6 +121,8 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
+    <Compile Include="SQLiteAsync.cs" />
+    <Compile Include="SQLite.cs" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\ZingProfile.jpg" />
