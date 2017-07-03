@@ -49,6 +49,7 @@
     <Compile Include="DataBase\BusinessRepo.cs" />
     <Compile Include="Loyals.cs" />
     <Compile Include="DataBase\FileAccessHelper.cs" />
+    <Compile Include="Pages\BasePage.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">

@@ -17,7 +17,7 @@ namespace Loyals.DataBase
             sqliteConnection.CreateTable<LoyaltyCards>();
         }
 
-		public void AddNewBusiness(string name, string location, string myUR)
+		public void AddNewBusiness(string name, string location, string myURL)
 		{
 			sqliteConnection.Insert(new LoyaltyCards { Name = name, Location = location, LoyaltyCardURL = loyaltyCardURL });
 
