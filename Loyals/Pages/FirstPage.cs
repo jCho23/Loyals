@@ -63,14 +63,20 @@ namespace Loyals.Pages
                 var textStack = new StackLayout
                 {
                     HorizontalOptions = LayoutOptions.FillAndExpand,
-                    VerticalOptions = LayoutOptions.FillAndExpand,
-                    Orientation = StackOrientation.Horizontal,
+                    Orientation = StackOrientation.Vertical,
                     Children =
                     {
                         myTextProperty,
                         myDetailProperty
                     }
                 };
+
+                var cellLayoutStack = new StackLayout
+                {
+                    Orientation 
+                }
+
+
             }
         }
 
