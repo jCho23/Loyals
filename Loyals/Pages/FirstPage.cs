@@ -44,15 +44,21 @@ namespace Loyals.Pages
 
             Content = new StackLayout()
             {
-                Children = 
+                Children =
                 {
                     header,
                     listView,
                     checkPointsButton
                 }
-
             };
-                
         }
+
+        public class BusinessViewCell : ViewCell
+        {
+            
+        }
+
+
+
 	}
 }
