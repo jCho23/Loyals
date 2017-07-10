@@ -67,7 +67,8 @@ namespace Loyals.Pages
                     Orientation = StackOrientation.Horizontal,
                     Children =
                     {
-
+                        myTextProperty,
+                        myDetailProperty
                     }
                 };
             }
