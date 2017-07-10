@@ -10,6 +10,7 @@ namespace Loyals.ViewModels
         public IList<Business> ListOfBusinesses
         {
             get { return _listOfBusinesses; }
+            set { SetProperty (ref _listOfBusinesses, value); }
         }
 
     }
