@@ -93,8 +93,11 @@ namespace Loyals.Pages
 
                 var deleteAction = new MenuItem { Text = "Delete", IsDestructive = true };
                 //red background
+                deleteAction.SetBinding(MenuItem.CommandParameterProperty, new Binding("."));
+                deleteAction.Clicked += async (sender, e) =>
+                {
 
-
+                };
             }
         }
 
