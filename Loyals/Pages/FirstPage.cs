@@ -96,7 +96,8 @@ namespace Loyals.Pages
                 deleteAction.SetBinding(MenuItem.CommandParameterProperty, new Binding("."));
                 deleteAction.Clicked += async (sender, e) =>
                 {
-
+                    var mi = ((MenuItem)sender);
+                    Debug.WriteLine("Delete Context Action clicked: " + mi.CommandParameter);
                 };
             }
         }
