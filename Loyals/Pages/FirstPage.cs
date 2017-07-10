@@ -91,6 +91,9 @@ namespace Loyals.Pages
                     Debug.WriteLine("More Context Action Clicked: " + mi.CommandParameter);
                 };
 
+                var deleteAction = new MenuItem { Text = "Delete", IsDestructive = true };
+                //red background
+
 
             }
         }
