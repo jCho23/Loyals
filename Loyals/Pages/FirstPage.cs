@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Xamarin.Forms;
 using Loyals.Models;
+using System.Diagnostics;
 
 namespace Loyals.Pages
 {
@@ -86,7 +87,8 @@ namespace Loyals.Pages
                 moreAction.SetBinding(MenuItem.CommandParameterProperty, new Binding("."));
                 moreAction.Clicked += async (sender, e) =>
                 {
-
+                    var mi = ((MenuItem)sender);
+                    Debug.WriteLine("More Context Action Clicked: " + mi.CommandParameter);
                 };
 
 
