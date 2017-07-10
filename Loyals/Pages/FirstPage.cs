@@ -100,8 +100,5 @@ namespace Loyals.Pages
                 };
             }
         }
-
-
-
 	}
 }
