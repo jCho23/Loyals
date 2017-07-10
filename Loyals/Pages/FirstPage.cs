@@ -80,6 +80,10 @@ namespace Loyals.Pages
                     }
                 };
 
+                View = textStack;
+
+                var moreAction = new MenuItem { Text = "More" };
+
 
             }
         }
