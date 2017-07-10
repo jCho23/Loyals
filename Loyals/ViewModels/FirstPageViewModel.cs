@@ -9,7 +9,7 @@ namespace Loyals.ViewModels
 
         public IList<Business> ListOfBusinesses
         {
-            get 
+            get { return _listOfBusinesses; }
         }
 
     }
