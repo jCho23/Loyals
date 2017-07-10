@@ -60,7 +60,16 @@ namespace Loyals.Pages
 				var myTextProperty = new Label() { Text = "Text" };
 				var myDetailProperty = new Label() { Text = "Details" };
 
-				var textStack = new StackLayout
+                var textStack = new StackLayout
+                {
+                    HorizontalOptions = LayoutOptions.FillAndExpand,
+                    VerticalOptions = LayoutOptions.FillAndExpand,
+                    Orientation = StackOrientation.Horizontal,
+                    Children =
+                    {
+
+                    }
+                };
             }
         }
 
