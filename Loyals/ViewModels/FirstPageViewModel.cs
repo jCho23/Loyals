@@ -1,10 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
+using Loyals.Models;
 namespace Loyals.ViewModels
 {
     public class FirstPageViewModel : BaseViewModel
     {
-        public FirstPageViewModel()
-        {
-        }
+        IList<Business> _listOfBusinesses;
+
     }
 }
