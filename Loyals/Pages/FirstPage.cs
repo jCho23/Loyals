@@ -91,14 +91,16 @@ namespace Loyals.Pages
                     Debug.WriteLine("More Context Action Clicked: " + mi.CommandParameter);
                 };
 
-                var deleteAction = new MenuItem { Text = "Delete", IsDestructive = true };
-                //red background
+                var deleteAction = new MenuItem { Text = "Delete", IsDestructive = true }; //red background
                 deleteAction.SetBinding(MenuItem.CommandParameterProperty, new Binding("."));
                 deleteAction.Clicked += async (sender, e) =>
                 {
                     var mi = ((MenuItem)sender);
                     Debug.WriteLine("Delete Context Action clicked: " + mi.CommandParameter);
                 };
+                //Add to Viewcell's ContextActions property
+                ContextActions.Add(moreAction);
+                ContextActions.Add(deleteAction);
             }
         }
 	}
