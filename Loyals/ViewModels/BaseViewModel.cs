@@ -10,6 +10,8 @@ namespace Loyals
 		}
 
 		public event PropertyChangedEventHandler PropertyChanged;
+
+
 		protected virtual void OnPropertyChanged([CallerMemberName] //This is an Attribute, always in Square Brackets
 		                                         string propertyName=null)
 		{
