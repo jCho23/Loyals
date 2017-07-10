@@ -55,7 +55,13 @@ namespace Loyals.Pages
 
         public class BusinessViewCell : ViewCell
         {
-            
+            public BusinessViewCell()
+            {
+				var myTextProperty = new Label() { Text = "Text" };
+				var myDetailProperty = new Label() { Text = "Details" };
+
+				var textStack = new StackLayout
+            }
         }
 
 
