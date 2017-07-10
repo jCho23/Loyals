@@ -83,6 +83,11 @@ namespace Loyals.Pages
                 View = textStack;
 
                 var moreAction = new MenuItem { Text = "More" };
+                moreAction.SetBinding(MenuItem.CommandParameterProperty, new Binding("."));
+                moreAction.Clicked += async (sender, e) =>
+                {
+
+                };
 
 
             }
