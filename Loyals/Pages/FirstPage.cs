@@ -73,8 +73,12 @@ namespace Loyals.Pages
 
                 var cellLayoutStack = new StackLayout
                 {
-                    Orientation 
-                }
+                    Orientation = StackOrientation.Horizontal,
+                    Children =
+                    {
+                        textStack
+                    }
+                };
 
 
             }
