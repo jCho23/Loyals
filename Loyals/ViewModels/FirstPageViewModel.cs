@@ -7,5 +7,10 @@ namespace Loyals.ViewModels
     {
         IList<Business> _listOfBusinesses;
 
+        public IList<Business> ListOfBusinesses
+        {
+            get 
+        }
+
     }
 }
