@@ -3,11 +3,19 @@ using System.Collections.Generic;
 using Xamarin.Forms;
 using Loyals.Models;
 using System.Diagnostics;
+using System.Collections.ObjectModel;
 
 namespace Loyals.Pages
 {
     public class FirstPage : ContentPage
     {
+        
+        ObservableCollection<Business> businesses = new ObservableCollection<Business>()
+			{
+				new Business("Zing Cafe", new DateTime(2017, 5, 15)),
+
+				new Business("La Petite Hair Salon", new DateTime(2017, 5, 16))
+			};
 
         public FirstPage()
         {
@@ -17,15 +25,6 @@ namespace Loyals.Pages
                 FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
                 HorizontalOptions = LayoutOptions.Center
             };
-
-
-            List<Business> businesses = new List<Business>()
-            {
-                new Business("Zing Cafe", new DateTime(2017, 5, 15)),
-
-                new Business("La Petite Hair Salon", new DateTime(2017, 5, 16))
-            };
-
 
             ListView listView = new ListView
             {
