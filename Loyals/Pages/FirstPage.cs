@@ -31,6 +31,7 @@ namespace Loyals.Pages
             {
                 // Source of data items.
                 ItemsSource = businesses,
+                ItemTemplate = new DataTemplate(typeof(BusinessViewCell))
                 //ItemTemplate need to set to data template of view cell
             };
 
