@@ -9,7 +9,7 @@ namespace Loyals.Pages
 {
     public class FirstPage : ContentPage
     {
-        //Observalbe collections automatically UPdate the UI; however, listviews don't 
+        //Observable collections automatically Update the UI; however, listviews don't 
         public static ObservableCollection<Business> businesses = new ObservableCollection<Business>()
 			{
 				new Business("Zing Cafe", new DateTime(2017, 5, 15)),
