@@ -6,13 +6,16 @@ namespace Loyals
 {
 	public partial class App : Application
 	{
+		public static BusinessRepo BusinessRepo { get; private set; }
+
 		public App()
 		{
-			InitializeComponent();
-
-			var storeToLoad = FakeService.GetStores()[0];
-
-			MainPage = new LoyalsPage();
+            InitializeComponent();
+			string dbPath = FileAccessHelper.GetLocalFilePath("Loyals1.db3");
+			BusinessRepo = new BusinessRepo(dbPath);
+			// DogRepo.AddNewDog("Olive", "Black");
+			// The root page of your application
+			MainPage = new NavigationPage(new FirstPage());
 		}
 
 		protected override void OnStart()
