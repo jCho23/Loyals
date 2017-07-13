@@ -90,8 +90,8 @@ namespace Loyals.Pages
                     var mi = ((MenuItem)sender);
                     Debug.WriteLine("More Context Action Clicked: " + mi.CommandParameter);
                 };
-
-                var deleteAction = new MenuItem { Text = "Delete", IsDestructive = true }; //red background
+				//red background
+				var deleteAction = new MenuItem { Text = "Delete", IsDestructive = true }; 
                 deleteAction.SetBinding(MenuItem.CommandParameterProperty, new Binding("."));
                 deleteAction.Clicked +=  (sender, e) =>
                 {
