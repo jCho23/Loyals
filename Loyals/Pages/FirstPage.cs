@@ -93,7 +93,7 @@ namespace Loyals.Pages
 				//red background
 				var deleteAction = new MenuItem { Text = "Delete", IsDestructive = true }; 
                 deleteAction.SetBinding(MenuItem.CommandParameterProperty, new Binding("."));
-                deleteAction.Clicked +=  (sender, e) =>
+                deleteAction.Clicked += (sender, e) =>
                 {
 					//This is Called Type-Casting
 					var mi = ((MenuItem)sender);
