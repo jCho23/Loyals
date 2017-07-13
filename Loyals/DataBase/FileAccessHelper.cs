@@ -13,6 +13,22 @@ namespace Loyals.DataBase
             string myPath = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
             return System.IO.Path.Combine(myPath, filename);
         }
+
+
+
+
+          public class FileHelper : IFileHelper
+    {
+        public string GetLocalFilePath(string filename)
+        {
+            string path = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+            return Path.Combine(path, filename);
+        }
+    }
+
+
+
+
 #endif
 
 #if __IOS__
@@ -28,9 +44,35 @@ namespace Loyals.DataBase
 
             return System.IO.Path.Combine(myLibraryFolder, filename);
         }
+
+
+
+
+
+
+       
+{
+    public class FileHelper : IFileHelper
+    {
+        public string GetLocalFilePath(string filename)
+        {
+            string docFolder = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+            string libFolder = Path.Combine(docFolder, "..", "Library", "Databases");
+
+            if (!Directory.Exists(libFolder))
+            {
+                Directory.CreateDirectory(libFolder);
+            }
+
+            return Path.Combine(libFolder, filename);
+        }
+    }
+}
+
+
 #endif
 
-    }
+	}
 
 }
 
