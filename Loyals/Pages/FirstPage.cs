@@ -95,10 +95,10 @@ namespace Loyals.Pages
                 deleteAction.SetBinding(MenuItem.CommandParameterProperty, new Binding("."));
                 deleteAction.Clicked +=  (sender, e) =>
                 {
-					//This is Called type-Casting
+					//This is Called Type-Casting
 					var mi = ((MenuItem)sender);
                     Debug.WriteLine("Delete Context Action clicked: " + mi.CommandParameter);
-                    //This is the second type of type-Casting
+                    //This is the second Type of type-Casting
                     var item = mi.CommandParameter as Business;
                     FirstPage.businesses.Remove(item);
                 };
