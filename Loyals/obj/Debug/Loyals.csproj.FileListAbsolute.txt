@@ -1,0 +1,4 @@
+/Users/junecho/Projects/Loyals/Loyals/obj/Debug/Loyals.csprojResolveAssemblyReference.cache
+/Users/junecho/Projects/Loyals/Loyals/obj/Debug/Loyals.csproj.CoreCompileInputs.cache
+/Users/junecho/Projects/Loyals/Loyals/obj/Debug/Loyals.App.xaml.g.cs
+/Users/junecho/Projects/Loyals/Loyals/obj/Debug/Loyals.Pages.LoyalsPage.xaml.g.cs

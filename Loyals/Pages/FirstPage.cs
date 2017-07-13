@@ -9,8 +9,8 @@ namespace Loyals.Pages
 {
     public class FirstPage : ContentPage
     {
-        
-        ObservableCollection<Business> businesses = new ObservableCollection<Business>()
+        //Observalbe collections automatically UPdate the UI; however, listviews don't 
+        public static ObservableCollection<Business> businesses = new ObservableCollection<Business>()
 			{
 				new Business("Zing Cafe", new DateTime(2017, 5, 15)),
 
@@ -93,10 +93,13 @@ namespace Loyals.Pages
 
                 var deleteAction = new MenuItem { Text = "Delete", IsDestructive = true }; //red background
                 deleteAction.SetBinding(MenuItem.CommandParameterProperty, new Binding("."));
-                deleteAction.Clicked += async (sender, e) =>
+                deleteAction.Clicked +=  (sender, e) =>
                 {
                     var mi = ((MenuItem)sender);
                     Debug.WriteLine("Delete Context Action clicked: " + mi.CommandParameter);
+                    //This is Called type-Casting
+                    var item = mi.CommandParameter as Business;
+                    FirstPage.businesses.Remove(item);
                 };
                 //Add to Viewcell's ContextActions property
                 ContextActions.Add(moreAction);
