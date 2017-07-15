@@ -37,7 +37,6 @@ namespace Loyals.Pages
             Button checkPointsButton = new Button { Text = "Check Points" };
 
             //When you are in the the constructor, you have an instance of that class (first page)
-
             var newLayoutInstance = new StackLayout();
             newLayoutInstance.Children.Add(header);
             newLayoutInstance.Children.Add(listView);
