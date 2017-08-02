@@ -19,7 +19,7 @@ namespace Loyals.DataBase
 
 		public void AddNewBusiness(string name, string location, string myURL)
 		{
-			sqliteConnection.Insert(new LoyaltyCards { Name = name, Location = location, LoyaltyCardURL = loyaltyCardURL });
+            sqliteConnection.Insert(new LoyaltyCards(name, location, myURL ));
 
 		}
 

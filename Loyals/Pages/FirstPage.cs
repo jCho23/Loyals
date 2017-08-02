@@ -108,7 +108,7 @@ namespace Loyals.Pages
         }
 
 
-		//public class CustomCell : Cell
+		//public class CustomCell : Cellx
 		//{
 		//	public CustomCell()
 		//	{
