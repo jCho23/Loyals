@@ -1,15 +1,14 @@
 ﻿<Properties StartupConfiguration="{10FDB463-0D63-4F37-8503-5C2759B4E31F}|Default">
   <MonoDevelop.Ide.ItemProperties.Loyals.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.C3B4EDC3-47DA-4171-9039-237AEE93D965" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Loyals/DataBase/FileAccessHelper.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Loyals/DataBase/BusinessRepo.cs">
     <Files>
-      <File FileName="Loyals/DataBase/FileAccessHelper.cs" Line="20" Column="48" />
+      <File FileName="Loyals/DataBase/FileAccessHelper.cs" Line="1" Column="1" />
       <File FileName="Loyals/Pages/FirstPage.cs" Line="9" Column="2" />
       <File FileName="Loyals/Pages/LoyalsPage.xaml" Line="97" Column="1" />
       <File FileName="Loyals/Pages/LoyalsPage.xaml.cs" Line="1" Column="1" />
       <File FileName="Loyals/ViewModels/FirstPageViewModel.cs" Line="1" Column="1" />
-      <File FileName="Loyals/App.xaml.cs" Line="15" Column="57" />
-      <File FileName="Loyals/DataBase/BusinessRepo.cs" Line="32" Column="77" />
-      <File FileName="Loyals/Models/Business.cs" Line="1" Column="1" />
+      <File FileName="Loyals/App.xaml.cs" Line="1" Column="1" />
+      <File FileName="Loyals/DataBase/BusinessRepo.cs" Line="32" Column="57" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

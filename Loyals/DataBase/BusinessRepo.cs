@@ -8,8 +8,8 @@ using Xamarin.Forms;
 
 namespace Loyals
 {
-    public class BusinessRepo
-    {
+	public class BusinessRepo
+	{
         private SQLiteConnection sqliteConnection;
 
         public BusinessRepo(string dbPath)
@@ -24,35 +24,35 @@ namespace Loyals
         //static = ensures one instance (singleton implementation)
         //Get and/or Set = Property
         //No () = Property
-        {
-            get
-            {
-                if (database == null)
-                {
+		{
+			get
+			{
+				if (database == null)
+				{
                     database = new BusinessRepo(DependencyService.Get<IFileHelper>().GetLocalFilePath("TodoSQLite.db3"));
-                    //Dependency Service = https://developer.xamarin.com/guides/xamarin-forms/application-fundamentals/dependency-service/
-                }
-                return database;
-            }
-        }
+					//Dependency Service = https://developer.xamarin.com/guides/xamarin-forms/application-fundamentals/dependency-service/
+				}
+				return database;
+			}
+		}
 
 
-        public void AddNewBusiness(string name, string location, string myURL)
-        {
+		public void AddNewBusiness(string name, string location, string myURL)
+		{
             sqliteConnection.Insert(new LoyaltyCards(name, location, myURL ));
-        }
+		}
 
-        public List<LoyaltyCards> GetAllLoyaltyCards()
-        {
-            return sqliteConnection.Table<LoyaltyCards>().ToList();
-        }
+		public List<LoyaltyCards> GetAllLoyaltyCards()
+		{
+			return sqliteConnection.Table<LoyaltyCards>().ToList();
+		}
 
-        public LoyaltyCards GetFirstLoyaltyCard()
-        {
-            return sqliteConnection.Table<LoyaltyCards>().FirstOrDefault();
-        }
+		public LoyaltyCards GetFirstLoyaltyCard()
+		{
+			return sqliteConnection.Table<LoyaltyCards>().FirstOrDefault();
+		}
 
-    }
+	}
 }
 
 
