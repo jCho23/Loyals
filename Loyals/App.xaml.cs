@@ -9,8 +9,7 @@ namespace Loyals
 		public static BusinessRepo BusinessRepo { get; private set; }
 
 		public App()
-		{
-            InitializeComponent();
+        {Button();
 			string dbPath = FileAccessHelper.GetLocalFilePath("Loyals1.db3");
 			BusinessRepo = new BusinessRepo(dbPath);
 			// DogRepo.AddNewDog("Olive", "Black");

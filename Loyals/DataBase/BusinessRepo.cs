@@ -5,7 +5,7 @@ using System.Linq;
 using Loyals.Models;
 using Loyals.DataBase;
 
-namespace Loyals.DataBase
+namespace Loyals
 {
 	public class BusinessRepo
 	{
@@ -17,10 +17,25 @@ namespace Loyals.DataBase
             sqliteConnection.CreateTable<LoyaltyCards>();
         }
 
+        public static BusinessRepo Database
+        //static = ensures one instance (singleton implementation)
+        //Get and/or Set = Property
+        //No () = Property
+		{
+			get
+			{
+				if (database == null)
+				{
+					database = new TodoItemDatabase(DependencyService.Get<IFileHelper>().GetLocalFilePath("TodoSQLite.db3"));
+				}
+				return database;
+			}
+		}
+
+
 		public void AddNewBusiness(string name, string location, string myURL)
 		{
             sqliteConnection.Insert(new LoyaltyCards(name, location, myURL ));
-
 		}
 
 		public List<LoyaltyCards> GetAllLoyaltyCards()
