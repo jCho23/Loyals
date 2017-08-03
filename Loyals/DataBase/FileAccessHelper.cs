@@ -32,25 +32,6 @@ namespace Loyals.DataBase
 #endif
 
 #if __IOS__
-        public static string GetLocalFilePath(string filename)
-        {
-            string myPath = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
-            string myLibraryFolder = System.IO.Path.Combine(myPath, "..", "Library");
-
-            if (!System.IO.Directory.Exists(myLibraryFolder))
-            {
-                System.IO.Directory.CreateDirectory(myLibraryFolder);
-            }
-
-            return System.IO.Path.Combine(myLibraryFolder, filename);
-        }
-
-
-
-
-
-
-       
 {
     public class FileHelper : IFileHelper
     {
@@ -72,7 +53,7 @@ namespace Loyals.DataBase
 
 #endif
 
-	}
+    }
 
 }
 
