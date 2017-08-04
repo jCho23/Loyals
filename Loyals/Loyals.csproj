@@ -50,7 +50,7 @@
     <Compile Include="DataBase\FileAccessHelper.cs" />
     <Compile Include="Pages\BasePage.cs" />
     <Compile Include="Models\LoyaltyCards.cs" />
-    <Compile Include="Interface\EmptyClass.cs" />
+    <Compile Include="Interface\IFileHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">
