@@ -1,4 +1,5 @@
 ﻿using Loyals.DataBase;
+using Loyals.Pages;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
