@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using Loyals.iOS;
 using Xamarin.Forms;
 
