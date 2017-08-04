@@ -10,7 +10,6 @@ namespace Loyals
 	}
 
 
-
 	static TodoItemDatabase database;
 
 	public static TodoItemDatabase Database
