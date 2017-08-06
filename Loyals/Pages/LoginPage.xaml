@@ -23,8 +23,13 @@
             x:Name="lblUserName" Text="Username: " />
         <Entry Grid.Row="0" Grid.Column="1"
             x:Name="entryUserName" Keyboard="Email" />
+        <Label Grid.Row="1" Grid.Column="0"
+            x:Name="lblPassword" Text="Password: " />
+        <Entry Grid.Row="1" Grid.Column="1"
+            x:Name="entryPassword" IsPassword="true" />
         
 
-            
+
+        
     </Grid>
 </ContentPage>
