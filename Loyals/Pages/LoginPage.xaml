@@ -5,6 +5,23 @@
     x:Class="Loyals.LoginPage"
     Title="Login"
     BackgroundColor ="Black">
+    <ContentPage.Content>
+        <StackLayout
+            Orientation="Vertical"
+            Padding="20"
+            Spacing="30" >
+
+
+
+
+            
+
+        </StackLayout>
+    </ContentPage.Content>
+
+
+
+
     
     <Grid Padding="16">
         <Grid.ColumnDefinitions>
