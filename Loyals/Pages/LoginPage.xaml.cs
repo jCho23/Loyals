@@ -7,7 +7,7 @@ namespace Loyals
 {
     public partial class LoginPage : ContentPage
     {
-        public event Action<Account> LoginSucceeded = (x) => { };
+        public event Action<Account> LoginSucceeded = (j) => { };
         AccountManager accountManager;
 
         public LoginPage()
@@ -34,7 +34,9 @@ namespace Loyals
                 }
                 else
                 {
-                    await DisplayAlert("Authentication Failed", "FingerPrint Authentication Failed", "OK");   
+                    await DisplayAlert("Authentication Failed", 
+                                       "FingerPrint Authentication Failed", 
+                                       "OK");   
                 }
             }
         }
@@ -55,7 +57,6 @@ namespace Loyals
                 entryUserName.Text = string.Empty;
             }
         }
-
 
         void BtnCreateAccount_Clicked (object sender, EventArgs e)
         {
