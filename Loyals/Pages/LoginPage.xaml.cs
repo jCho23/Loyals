@@ -38,7 +38,10 @@ namespace Loyals
         }
 
 
-
+        void BtnCreateAccountClicked (object sender, EventArgs e)
+        {
+            
+        }
 
 
     }
