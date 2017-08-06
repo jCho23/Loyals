@@ -14,7 +14,7 @@
             <RowDefinition Height = "auto" />
             <RowDefinition Height = "auto" />
             <RowDefinition Height = "auto" />
-
+            <RowDefinition Height = "auto" />
             <RowDefinition Height = "*" />
             <RowDefinition Height = "auto" />
         </Grid.RowDefinitions>
@@ -29,10 +29,12 @@
             x:Name="entryPassword" IsPassword="true" />
         <Button Grid.Row="2" Grid.ColumnSpan="2"
             x:Name="btnLogin" Text="Login to Existing Account" />
+        <Button Grid.Row="3" Grid.ColumnSpan="2"
+            x:Name="btnFPLogin" Text="Login using Fingerprint" />
 
-        <Button
-
-
+        
+        <Button Grid.Row="4" Grid.ColumnSpan="2"
+            x:Name="btnCreateAccount" Text="Create New Account" />
         
     </Grid>
 </ContentPage>
