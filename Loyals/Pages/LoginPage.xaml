@@ -2,8 +2,9 @@
 <ContentPage
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-    x:Class="Loyals.LoginPage">
+    x:Class="Loyals.LoginPage"
     Title="Login"
+    BackgroundColor ="Black">
     
     <Grid Padding="16">
         <Grid.ColumnDefinitions>
@@ -20,22 +21,32 @@
             <RowDefinition Height = "auto" />
         </Grid.RowDefinitions>
 
-        <Label Grid.Row="0" Grid.Column="0"
-            x:Name="lblUserName" Text="Username: " />
+        <Label 
+            Grid.Row="0" Grid.Column="0"
+            x:Name="lblUserName" 
+            Text="Username: "
+            TextColor="Blue" />
         <Entry Grid.Row="0" Grid.Column="1"
-            x:Name="entryUserName" Keyboard="Email" />
+            x:Name="entryUserName" 
+            Keyboard="Email" />
         <Label Grid.Row="1" Grid.Column="0"
-            x:Name="lblPassword" Text="Password: " />
+            x:Name="lblPassword" 
+            Text="Password: " />
         <Entry Grid.Row="1" Grid.Column="1"
-            x:Name="entryPassword" IsPassword="true" />
+            x:Name="entryPassword" 
+            IsPassword="true" />
         <Button Grid.Row="2" Grid.ColumnSpan="2"
-            x:Name="btnLogin" Text="Login to Existing Account" />
+            x:Name="btnLogin" 
+            Text="Login to Existing Account" />
         <Button Grid.Row="3" Grid.ColumnSpan="2"
-            x:Name="btnFPLogin" Text="Login using Fingerprint" />
+            x:Name="btnFPLogin" 
+            Text="Login using Fingerprint"
+            TextColor="Aqua"/>
 
         
         <Button Grid.Row="5" Grid.ColumnSpan="2"
-            x:Name="btnCreateAccount" Text="Create New Account" />
+            x:Name="btnCreateAccount" 
+            Text="Create New Account" />
         
     </Grid>
 </ContentPage>

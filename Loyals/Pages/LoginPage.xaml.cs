@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using Xamarin.Forms;
+using Xamarin.Auth;
 using Plugin.Fingerprint;
+using Xamarin.Auth.AccountUtilities;
 
 namespace Loyals
 {
