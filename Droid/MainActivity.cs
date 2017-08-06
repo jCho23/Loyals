@@ -25,7 +25,7 @@ namespace Loyals.Droid
 			global::Xamarin.Forms.Forms.Init(this, bundle);
 			LoadApplication(new App());
 
-            App.DataBaseFolder = FileHelper.GetLocalStoragePath();
+            //App.DataBaseFolder = FileHelper.GetLocalStoragePath();
 		}
 	}
 }
