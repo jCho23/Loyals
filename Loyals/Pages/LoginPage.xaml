@@ -11,9 +11,12 @@
             Padding="20"
             Spacing="30" >
 
-
-
-
+            <BoxView
+                HeightRequest="10" />
+            <Image
+                HorizontalOptions="Center"
+                WidthRequest="300"
+                Source=".png" />
             
 
         </StackLayout>
