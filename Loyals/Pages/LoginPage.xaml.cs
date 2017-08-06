@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Xamarin.Forms;
-
+using Plugin.Fingerprint;
 
 namespace Loyals
 {
@@ -21,9 +21,22 @@ namespace Loyals
             btnFPLogin.Clicked += BtnFPLogin_Clicked;
         }
 
-        void BtnFPLogin_Clicked(object sender, EventArgs e)
+        private void BtnFPLogin_Clicked(object sender, EventArgs e)
         {
-
+            var result = await CrossFingerprint.Current.IsAvailableAsync(true);
+            if (result)
+            {
+                var auth = await CrossFingerprint.Current.AuthenticateAsync("Authenticate Access to your Rewards");
+                if (auth.Authenticated)
+                {
+                    var username = "fpAuth";
+                    LoginSucceeded(accountManager.GetAccount(username));
+                }
+                else
+                {
+                    await DisplayAlert("Authentication Failed", "FingerPrint Authentication Failed", "OK");   
+                }
+            }
         }
 
         void BtnLogin_Clicked (object sender, EventArgs e)
