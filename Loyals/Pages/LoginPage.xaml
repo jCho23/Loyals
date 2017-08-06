@@ -43,7 +43,7 @@
                     <Entry Grid.Row="0" Grid.Column="1"
                         x:Name="entryUserName"
                         Text ="{Binding EmailAddress}"
-                        TextColor ="White"
+                        TextColor ="Blue"
                         Placeholder="Email"
                         Keyboard="Email"/>
                     <Label Grid.Row="1" Grid.Column="0"
@@ -52,11 +52,12 @@
                     <Entry Grid.Row="1" Grid.Column="1"
                         x:Name="entryPassword" 
                         Text= "{Binding Password}"
-                        TextColor="White"
+                        TextColor="Blue"
+                        Placeholder="Password"
                         IsPassword="true" />
                     <Button Grid.Row="2" Grid.ColumnSpan="2"
                         x:Name="btnLogin" 
-                        Text="Login to Existing Account" />
+                        Text="Login" />
                     <Button Grid.Row="3" Grid.ColumnSpan="2"
                         x:Name="btnFPLogin" 
                         Text="Login using Fingerprint"
