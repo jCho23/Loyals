@@ -17,56 +17,53 @@
                 HorizontalOptions="Center"
                 WidthRequest="300"
                 Source=".png" />
-            
+            <Frame
+                BackgroundColor="#BF043055"
+                HasShadow="false" >
 
+                <Grid Padding="16">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height = "auto" />
+                        <RowDefinition Height = "auto" />
+                        <RowDefinition Height = "auto" />
+                        <RowDefinition Height = "auto" />
+                        <RowDefinition Height = "*" />
+                        <RowDefinition Height = "auto" />
+                    </Grid.RowDefinitions>
+
+                    <Label 
+                        Grid.Row="0" Grid.Column="0"
+                        x:Name="lblUserName" 
+                        Text="Username: "
+                        TextColor="Blue" />
+                    <Entry Grid.Row="0" Grid.Column="1"
+                        x:Name="entryUserName" 
+                        Keyboard="Email" />
+                    <Label Grid.Row="1" Grid.Column="0"
+                        x:Name="lblPassword" 
+                        Text="Password: " />
+                    <Entry Grid.Row="1" Grid.Column="1"
+                        x:Name="entryPassword" 
+                        IsPassword="true" />
+                    <Button Grid.Row="2" Grid.ColumnSpan="2"
+                        x:Name="btnLogin" 
+                        Text="Login to Existing Account" />
+                    <Button Grid.Row="3" Grid.ColumnSpan="2"
+                        x:Name="btnFPLogin" 
+                        Text="Login using Fingerprint"
+                        TextColor="Aqua"/>
+
+            
+                    <Button Grid.Row="5" Grid.ColumnSpan="2"
+                        x:Name="btnCreateAccount" 
+                        Text="Create New Account" />
+                </Grid>
+              </Frame>
         </StackLayout>
     </ContentPage.Content>
-
-
-
-
-    
-    <Grid Padding="16">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-
-        <Grid.RowDefinitions>
-            <RowDefinition Height = "auto" />
-            <RowDefinition Height = "auto" />
-            <RowDefinition Height = "auto" />
-            <RowDefinition Height = "auto" />
-            <RowDefinition Height = "*" />
-            <RowDefinition Height = "auto" />
-        </Grid.RowDefinitions>
-
-        <Label 
-            Grid.Row="0" Grid.Column="0"
-            x:Name="lblUserName" 
-            Text="Username: "
-            TextColor="Blue" />
-        <Entry Grid.Row="0" Grid.Column="1"
-            x:Name="entryUserName" 
-            Keyboard="Email" />
-        <Label Grid.Row="1" Grid.Column="0"
-            x:Name="lblPassword" 
-            Text="Password: " />
-        <Entry Grid.Row="1" Grid.Column="1"
-            x:Name="entryPassword" 
-            IsPassword="true" />
-        <Button Grid.Row="2" Grid.ColumnSpan="2"
-            x:Name="btnLogin" 
-            Text="Login to Existing Account" />
-        <Button Grid.Row="3" Grid.ColumnSpan="2"
-            x:Name="btnFPLogin" 
-            Text="Login using Fingerprint"
-            TextColor="Aqua"/>
-
-        
-        <Button Grid.Row="5" Grid.ColumnSpan="2"
-            x:Name="btnCreateAccount" 
-            Text="Create New Account" />
-        
-    </Grid>
 </ContentPage>
