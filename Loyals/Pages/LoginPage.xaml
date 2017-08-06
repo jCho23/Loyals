@@ -4,6 +4,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     x:Class="Loyals.LoginPage">
     Title="Login"
+    
     <Grid Padding="16">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -33,7 +34,7 @@
             x:Name="btnFPLogin" Text="Login using Fingerprint" />
 
         
-        <Button Grid.Row="4" Grid.ColumnSpan="2"
+        <Button Grid.Row="5" Grid.ColumnSpan="2"
             x:Name="btnCreateAccount" Text="Create New Account" />
         
     </Grid>
