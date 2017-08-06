@@ -51,6 +51,8 @@
                         Text="Password: " />
                     <Entry Grid.Row="1" Grid.Column="1"
                         x:Name="entryPassword" 
+                        Text= "{Binding Password}"
+                        TextColor="White"
                         IsPassword="true" />
                     <Button Grid.Row="2" Grid.ColumnSpan="2"
                         x:Name="btnLogin" 
