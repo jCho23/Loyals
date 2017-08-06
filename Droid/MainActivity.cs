@@ -1,5 +1,6 @@
 ﻿using System;
-
+using Plugin.CurrentActivity;
+using Plugin.Fingerprint;
 using Android.App;
 using Android.Content;
 using Android.Content.PM;
@@ -18,7 +19,9 @@ namespace Loyals.Droid
 			TabLayoutResource = Resource.Layout.Tabbar;
 			ToolbarResource = Resource.Layout.Toolbar;
 
-			base.OnCreate(bundle);
+            base.OnCreate(bundle);
+
+            CrossFingerprint.SetCurrentActivityResolver (() => CrossCurrentActivity.Current.Activity);
 
 			global::Xamarin.Forms.Forms.Init(this, bundle);
 
