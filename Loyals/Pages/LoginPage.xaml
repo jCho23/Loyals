@@ -10,6 +10,15 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
+        <Grid.RowDefinitions>
+            <RowDefinition Height = "auto" />
+            <RowDefinition Height = "auto" />
+            <RowDefinition Height = "auto" />
+
+            <RowDefinition Height = "*" />
+            <RowDefinition Height = "auto" />
+        </Grid.RowDefinitions>
+
 
 
 
