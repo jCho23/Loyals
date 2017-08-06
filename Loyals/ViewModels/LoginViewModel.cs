@@ -31,6 +31,13 @@ namespace Loyals
             {
                 return password;
             }
+
+            set
+            {
+                password = value;
+                PropertyChanged(this, new PropertyChangedEventArgs("Password"));
+            }
+
         }
 
 
