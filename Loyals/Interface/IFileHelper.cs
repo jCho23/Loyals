@@ -10,9 +10,9 @@ namespace Loyals
 	}
 
 
-	static TodoItemDatabase database;
+	static BusinessRepo database;
 
-	public static TodoItemDatabase Database
+	public static BusinessRepo Database
 	{
 		get
 		{
