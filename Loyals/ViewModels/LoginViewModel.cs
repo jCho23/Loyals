@@ -49,9 +49,10 @@ namespace Loyals
             SubmitCommand = new Command(OnSubmit);
         }
 
-
-
-
-
+        public void OnSubmit()
+        {
+            if (emailAddress != "June@june.com" || password != "june")
+                DisplayInvalidLoginPrompt();
+        }
     }
 }
