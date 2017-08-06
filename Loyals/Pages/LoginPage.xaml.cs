@@ -59,9 +59,12 @@ namespace Loyals
 
         void BtnCreateAccount_Clicked (object sender, EventArgs e)
         {
-            
+            if (accountManager.CreateAndSaveAccount(entryUserName.Text, entryPassword.Text) == true)
+                LoginSucceeded(accountManager.GetAccount(entryUserName.Text));
+            else
+                DisplayAlert("Create Account Failed",
+                             "Unable to create a new account - does this account already exist?",
+                             "OK");
         }
-
-
     }
 }
