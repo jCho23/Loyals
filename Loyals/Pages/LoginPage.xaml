@@ -19,10 +19,12 @@
             <RowDefinition Height = "auto" />
         </Grid.RowDefinitions>
 
+        <Label Grid.Row="0" Grid.Column="0"
+            x:Name="lblUserName" Text="Username: " />
+        <Entry Grid.Row="0" Grid.Column="1"
+            x:Name="entryUserName" Keyboard="Email" />
+        
 
-
-
-
-
+            
     </Grid>
 </ContentPage>
