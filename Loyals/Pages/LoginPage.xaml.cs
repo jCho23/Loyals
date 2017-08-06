@@ -20,7 +20,15 @@ namespace Loyals
             btnCreateAccount.Clicked += BtnCreateAccountClicked;
         }
 
-
+        void BtnLoginClicked (object sender, EventArgs e)
+        {
+            if (accountManager.LoginToAccount(entryUserName.Text, entryPassword.Text) == false)
+            {
+                DisplayAlert("Login Failed",
+                            "Unable to login, please check your username and password",
+                            "OK");
+            }
+        }
 
 
 
