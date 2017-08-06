@@ -147,6 +147,7 @@
     <AndroidResource Include="Resources\drawable\ZingProfile.jpg" />
     <AndroidResource Include="Resources\drawable\HeaderBackground.png" />
     <AndroidResource Include="Resources\drawable\curved.png" />
+    <AndroidResource Include="Resources\drawable\jordan.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="FileHelper\" />

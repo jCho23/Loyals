@@ -15,7 +15,7 @@
             <Image
                 HorizontalOptions="Center"
                 WidthRequest="300"
-                Source=".png" />
+                Source="jordan.png" />
             <Frame
                 BackgroundColor="#BF043055"
                 HasShadow="false" >
