@@ -28,6 +28,13 @@ namespace Loyals
                             "Unable to login, please check your username and password",
                             "OK");
             }
+
+            else
+            {
+                LoginSucceeded(accountManager.GetAccount(entryUserName.Text));
+                entryPassword.Text = string.Empty;
+                entryUserName.Text = string.Empty;
+            }
         }
 
 
