@@ -27,7 +27,10 @@
             x:Name="lblPassword" Text="Password: " />
         <Entry Grid.Row="1" Grid.Column="1"
             x:Name="entryPassword" IsPassword="true" />
-        
+        <Button Grid.Row="2" Grid.ColumnSpan="2"
+            x:Name="btnLogin" Text="Login to Existing Account" />
+
+        <Button
 
 
         
