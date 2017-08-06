@@ -1,5 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Windows.Input;
+using Xamarin.Forms;
 namespace Loyals
 {
     public class LoginViewModel : INotifyPropertyChanged
@@ -39,6 +41,15 @@ namespace Loyals
             }
 
         }
+
+        public ICommand SubmitCommand { protected set; get; }
+
+        public LoginViewModel()
+        {
+            SubmitCommand = new Command(OnSubmit);
+        }
+
+
 
 
 
