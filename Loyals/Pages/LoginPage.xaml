@@ -3,9 +3,17 @@
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     x:Class="Loyals.LoginPage">
+    Title="Login"
+    <Grid Padding="16">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
 
 
-    
-	<ContentPage.Content>
-	</ContentPage.Content>
+
+
+
+
+    </Grid>
 </ContentPage>
