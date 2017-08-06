@@ -1,13 +1,11 @@
 ﻿<Properties StartupConfiguration="{10FDB463-0D63-4F37-8503-5C2759B4E31F}|Default">
   <MonoDevelop.Ide.ItemProperties.Loyals.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.C3B4EDC3-47DA-4171-9039-237AEE93D965" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Droid/FileHelper/EmptyClass.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Loyals/Interface/IFileHelper.cs">
     <Files>
       <File FileName="Loyals/DataBase/FileAccessHelper.cs" Line="41" Column="86" />
       <File FileName="Loyals/App.xaml.cs" Line="16" Column="56" />
       <File FileName="Loyals/DataBase/BusinessRepo.cs" Line="32" Column="77" />
-      <File FileName="iOS/FileHelper/FileHelper.cs" Line="7" Column="1" />
-      <File FileName="Loyals/Interface/IFileHelper.cs" Line="12" Column="5" />
-      <File FileName="Droid/FileHelper/EmptyClass.cs" Line="1" Column="1" />
+      <File FileName="Loyals/Interface/IFileHelper.cs" Line="13" Column="27" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

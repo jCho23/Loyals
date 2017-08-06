@@ -18,7 +18,7 @@ namespace Loyals
 		{
 			if (database == null)
 			{
-				database = new TodoItemDatabase(DependencyService.Get<IFileHelper>().GetLocalFilePath("TodoSQLite.db3"));
+                database = new BusinessRepo(DependencyService.Get<IFileHelper>().GetLocalFilePath("TodoSQLite.db3"));
 			}
 			return database;
 		}
