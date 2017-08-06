@@ -10,7 +10,6 @@
             Orientation="Vertical"
             Padding="20"
             Spacing="30" >
-
             <BoxView
                 HeightRequest="10" />
             <Image
