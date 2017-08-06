@@ -16,11 +16,17 @@ namespace Loyals
 
             accountManager = new AccountManager();
 
-            btnLogin.Clicked += BtnLoginClicked;
-            btnCreateAccount.Clicked += BtnCreateAccountClicked;
+            btnLogin.Clicked += BtnLogin_Clicked;
+            btnCreateAccount.Clicked += BtnCreateAccount_Clicked;
+            btnFPLogin.Clicked += BtnFPLogin_Clicked;
         }
 
-        void BtnLoginClicked (object sender, EventArgs e)
+        void BtnFPLogin_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        void BtnLogin_Clicked (object sender, EventArgs e)
         {
             if (accountManager.LoginToAccount(entryUserName.Text, entryPassword.Text) == false)
             {
@@ -38,7 +44,7 @@ namespace Loyals
         }
 
 
-        void BtnCreateAccountClicked (object sender, EventArgs e)
+        void BtnCreateAccount_Clicked (object sender, EventArgs e)
         {
             
         }
