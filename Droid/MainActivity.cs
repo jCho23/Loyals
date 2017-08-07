@@ -16,7 +16,7 @@ namespace Loyals.Droid
                 //Theme = "@style/MyTheme.Splash", 
                 //MainLauncher = true,
                 //ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
-	
+    [Activity()]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
 	{
 		protected override void OnCreate(Bundle bundle)

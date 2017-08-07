@@ -177,6 +177,7 @@
     <AndroidResource Include="Resources\drawable\HeaderBackground.png" />
     <AndroidResource Include="Resources\drawable\curved.png" />
     <AndroidResource Include="Resources\drawable\jordan.png" />
+    <AndroidResource Include="Resources\drawable\splash_background.xml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="FileHelper\" />
