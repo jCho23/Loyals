@@ -7,10 +7,11 @@
 		</shape>
 	</item>
 
-
-
-
-
-
-
+	<item>
+        <bitmap xmlns:android="http://schemas.android.com/apk/res/android"
+			android:src="@drawable/jordan"
+			android:gravity="center"
+			android:tileMade="disabled"
+			android:layout_gravity="center" />
+	</item>
 </layer-list>
