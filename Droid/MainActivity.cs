@@ -11,11 +11,11 @@ using Android.OS;
 
 namespace Loyals.Droid
 {
-	[Activity(Label = "Loyals.Droid", 
-                Icon = "@drawable/icon", 
-                Theme = "@style/MyTheme.Splash", 
-                MainLauncher = true,
-                ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+	//[Activity(Label = "Loyals.Droid", 
+                //Icon = "@drawable/icon", 
+                //Theme = "@style/MyTheme.Splash", 
+                //MainLauncher = true,
+                //ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
 	
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
 	{
