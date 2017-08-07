@@ -17,8 +17,6 @@ namespace Loyals
             var loginViewModel = new LoginViewModel();
             this.BindingContext = loginViewModel;
             loginViewModel.DisplayInvalidLoginPrompt += () => DisplayAlert("Sorry", "The credentials you supplied are incorrect");
-
-
             InitializeComponent();
 
             accountManager = new AccountManager();
@@ -28,7 +26,7 @@ namespace Loyals
             btnFPLogin.Clicked += BtnFPLogin_Clicked;
         }
 
-        private void BtnFPLogin_Clicked(object sender, EventArgs e)
+        async void BtnFPLogin_Clicked(object sender, EventArgs e)
         {
             var result = await CrossFingerprint.Current.IsAvailableAsync(true);
             if (result)
