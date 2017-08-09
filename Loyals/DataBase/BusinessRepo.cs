@@ -2,8 +2,6 @@
 using SQLite;
 using System.Collections.Generic;
 using System.Linq;
-using Loyals.Models;
-using Loyals.DataBase;
 using Xamarin.Forms;
 
 namespace Loyals
@@ -29,7 +27,7 @@ namespace Loyals
 			{
 				if (database == null)
 				{
-                    database = new BusinessRepo(DependencyService.Get<IFileHelper>().GetLocalFilePath("TodoSQLite.db3"));
+                    database = new BusinessRepo(DependencyService.Get<IFileHelper>().GetLocalFilePath("Loyals.db3"));
 					//Dependency Service = https://developer.xamarin.com/guides/xamarin-forms/application-fundamentals/dependency-service/
 				}
 				return database;
