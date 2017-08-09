@@ -11,7 +11,7 @@
             Padding="20"
             Spacing="30" >
             <BoxView
-                HeightRequest="10" />
+                HeightRequest="1" />
             <Image
                 HorizontalOptions="Center"
                 WidthRequest="300"
@@ -66,11 +66,8 @@
                         x:Name="btnFPLogin" 
                         Text="Login using Fingerprint"
                         FontSize="Large"
-                        Style="{StaticResource SpecialButton}"
-                        TextColor="Aqua"/>
-                    
-
-            
+                        Style="{StaticResource LoginButton}"
+                        TextColor="Aqua" />
                     <Button Grid.Row="5" Grid.ColumnSpan="2"
                         x:Name="btnCreateAccount" 
                         FontSize="Large"

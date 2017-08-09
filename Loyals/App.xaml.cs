@@ -11,7 +11,9 @@ namespace Loyals
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new FirstPage());
+            //MainPage = new NavigationPage(new FirstPage());
+
+            MainPage = new NavigationPage(new LoginPage());
         }
 
         protected override void OnStart()
