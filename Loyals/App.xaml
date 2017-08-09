@@ -13,7 +13,7 @@
 			<Color x:Key="BackgroundColor">#FFFFFF</Color>
 			<Color x:Key="RedeemTextColor">#85bb65</Color>
 			<Color x:Key="PointsTextColor">#000000</Color>
-            <Color x:Key="LoginButtonBackgroundColor">Black</Color>
+            <Color x:Key="LoginButtonBackgroundColor">#000000</Color>
 			
 			<!--Font Families-->
 			<OnPlatform x:Key="RegularFontFamily" x:TypeArguments="x:String">
@@ -60,7 +60,9 @@
 			</Style>
 
             <Style x:Key="SpecialLabel" TargetType="Label">
-                <Setter Property="FontFamily" Value="{StaticResource LightFontFamily}" />
+                <Setter Property="FontFamily" Value="{StaticResource SpecialFontFamily}" />
+                <Setter Property="FontSize" Value="{StaticResource TagTextFontSize}" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
             </Style>
 
 
@@ -98,7 +100,7 @@
 			</Style>
 
             <Style x:Key="LoginButton" TargetType="Button">
-                <Setter Property="LoginBackgroundColor" Value="{StaticResource LoginButtonBackgroundColor}" />
+                <Setter Property="BackgroundColor" Value="{StaticResource LoginButtonBackgroundColor}" />
                 <Setter Property="TextColor" Value="White" />
                 <Setter Property="HeightRequest" Value="60" />
                 <Setter Property="BorderRadius" Value="20" />
