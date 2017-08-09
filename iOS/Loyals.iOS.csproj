@@ -135,7 +135,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
-    <Folder Include="FileHelper\" />
+    <Folder Include="Implementations\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -148,7 +148,7 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="FileHelper\FileHelper.cs" />
+    <Compile Include="Implementations\FileHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\ZingProfile.jpg" />
