@@ -29,8 +29,6 @@ namespace Loyals.Droid
             CrossFingerprint.SetCurrentActivityResolver (() => CrossCurrentActivity.Current.Activity);
 			global::Xamarin.Forms.Forms.Init(this, bundle);
 			LoadApplication(new App());
-
-            //App.DataBaseFolder = FileHelper.GetLocalStoragePath();
 		}
 	}
 }
