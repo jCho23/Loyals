@@ -65,9 +65,6 @@
                 <Setter Property="HorizontalTextAlignment" Value="Center" />
             </Style>
 
-
-
-            
 			<Style x:Key="StatsNumberLabel" TargetType="Label">
 				<Setter Property="TextColor" Value="{StaticResource RedeemTextColor}" />
 				<Setter Property="HorizontalTextAlignment" Value="Center" />
