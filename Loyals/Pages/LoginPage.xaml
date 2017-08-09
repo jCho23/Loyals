@@ -39,7 +39,7 @@
                         Grid.Row="0" Grid.Column="0"
                         x:Name="lblUserName" 
                         Text="Username: "
-                        TextColor="Blue" />
+                        TextColor="White" />
                     <Entry Grid.Row="0" Grid.Column="1"
                         x:Name="entryUserName"
                         Text ="{Binding EmailAddress}"
@@ -48,6 +48,7 @@
                         Keyboard="Email"/>
                     <Label Grid.Row="1" Grid.Column="0"
                         x:Name="lblPassword" 
+                        TextColor="White"
                         Text="Password: " />
                     <Entry Grid.Row="1" Grid.Column="1"
                         x:Name="entryPassword" 

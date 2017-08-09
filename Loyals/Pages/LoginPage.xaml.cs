@@ -16,7 +16,7 @@ namespace Loyals
         {
             var loginViewModel = new LoginViewModel();
             this.BindingContext = loginViewModel;
-            loginViewModel.DisplayInvalidLoginPrompt += () => DisplayAlert("Sorry", "The credentials you supplied are incorrect");
+            loginViewModel.DisplayInvalidLoginPrompt += () => DisplayAlert("Sorry", "The credentials you supplied are incorrect","OK");
             InitializeComponent();
 
             accountManager = new AccountManager();
