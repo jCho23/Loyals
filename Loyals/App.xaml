@@ -13,6 +13,7 @@
 			<Color x:Key="BackgroundColor">#FFFFFF</Color>
 			<Color x:Key="RedeemTextColor">#85bb65</Color>
 			<Color x:Key="PointsTextColor">#000000</Color>
+            <Color x:Key="LoginButtonBackgroundColor">Black</Color>
 			
 			<!--Font Families-->
 			<OnPlatform x:Key="RegularFontFamily" x:TypeArguments="x:String">
@@ -31,8 +32,8 @@
 			</OnPlatform>
 
             <OnPlatform x:Key="SpecialFontFamily" x:TypeArguments="x:String">
-                <On Platform="iOS">HelveticaNeue</On>
-                <On Platform="Android">sans-serif</On>
+                <On Platform="iOS">Original</On>
+                <On Platform="Android">Original.ttf#Original</On>
             </OnPlatform>
 
 			<!--Font Sizes-->
@@ -57,7 +58,14 @@
 				<Setter Property="FontSize" Value="{StaticResource TagTextFontSize}" />
 				<Setter Property="HorizontalTextAlignment" Value="Center" />
 			</Style>
-				
+
+            <Style x:Key="SpecialLabel" TargetType="Label">
+                <Setter Property="FontFamily" Value="{StaticResource LightFontFamily}" />
+            </Style>
+
+
+
+            
 			<Style x:Key="StatsNumberLabel" TargetType="Label">
 				<Setter Property="TextColor" Value="{StaticResource RedeemTextColor}" />
 				<Setter Property="HorizontalTextAlignment" Value="Center" />
@@ -88,6 +96,15 @@
 				<Setter Property="FontFamily" Value="{StaticResource MediumFontFamily}" />
 				<Setter Property="FontSize" Value="{StaticResource ButtonFontSize}" />
 			</Style>
+
+            <Style x:Key="LoginButton" TargetType="Button">
+                <Setter Property="LoginBackgroundColor" Value="{StaticResource LoginButtonBackgroundColor}" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="HeightRequest" Value="60" />
+                <Setter Property="BorderRadius" Value="20" />
+                <Setter Property="FontFamily" Value="{StaticResource MediumFontFamily}" />
+                <Setter Property="FontSize" Value="{StaticResource ButtonFontSize}" />
+            </Style>
 			
 		</ResourceDictionary>
 		
