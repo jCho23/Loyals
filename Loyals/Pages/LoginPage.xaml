@@ -4,7 +4,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     x:Class="Loyals.LoginPage"
     Title="Login"
-    BackgroundColor ="Black">
+    BackgroundColor ="#191970">
     <ContentPage.Content>
         <StackLayout
             Orientation="Vertical"
@@ -20,7 +20,7 @@
                 BackgroundColor="#BF043055"
                 HasShadow="false" >
 
-                <Grid Padding="16">
+                <Grid Padding="7">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
                         <ColumnDefinition/>
@@ -58,6 +58,7 @@
                         IsPassword="true" />
                     <Button Grid.Row="2" Grid.ColumnSpan="2"
                         x:Name="btnLogin" 
+                        TextColor="Lime"
                         Text="Login" />
                     <Button Grid.Row="3" Grid.ColumnSpan="2"
                         x:Name="btnFPLogin" 
