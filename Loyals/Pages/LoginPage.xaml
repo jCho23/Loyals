@@ -59,15 +59,20 @@
                     <Button Grid.Row="2" Grid.ColumnSpan="2"
                         x:Name="btnLogin" 
                         TextColor="Lime"
+                        FontSize="Large"
+                        FontAttributes="Bold"
                         Text="Login" />
                     <Button Grid.Row="3" Grid.ColumnSpan="2"
                         x:Name="btnFPLogin" 
                         Text="Login using Fingerprint"
+                        FontSize="Large"
                         TextColor="Aqua"/>
+                    
 
             
                     <Button Grid.Row="5" Grid.ColumnSpan="2"
                         x:Name="btnCreateAccount" 
+                        FontSize="Large"
                         Text="Create New Account" />
                 </Grid>
               </Frame>
