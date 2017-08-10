@@ -176,6 +176,7 @@
     <AndroidResource Include="Resources\drawable\HeaderBackground.png" />
     <AndroidResource Include="Resources\drawable\curved.png" />
     <AndroidResource Include="Resources\drawable\jordan.png" />
+    <AndroidResource Include="Resources\drawable\WorthIt.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Implementations\" />

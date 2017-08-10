@@ -3,8 +3,8 @@
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     x:Class="Loyals.LoginPage"
-    Title="Login"
-    BackgroundColor ="#191970">
+    Title="Welcome"
+    BackgroundColor ="Black">
     <ContentPage.Content>
         <StackLayout
             Orientation="Vertical"
@@ -15,12 +15,13 @@
             <Image
                 HorizontalOptions="Center"
                 WidthRequest="300"
-                Source="jordan.png" />
+                HeightRequest="280"
+                Source="WorthIt.png" />
             <Frame
-                BackgroundColor="#BF043055"
+                BackgroundColor="#32cd32"
                 HasShadow="false" >
 
-                <Grid Padding="7">
+                <Grid Padding="5">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>
                          <ColumnDefinition Width="*"/>
@@ -58,7 +59,7 @@
                         IsPassword="true" />
                     <Button Grid.Row="2" Grid.ColumnSpan="2"
                         x:Name="btnLogin" 
-                        TextColor="Lime"
+                        TextColor="Black"
                         FontSize="Large"
                         FontAttributes="Bold"
                         Text="Login" />
