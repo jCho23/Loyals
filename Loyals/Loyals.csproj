@@ -47,7 +47,7 @@
       <DependentUpon>LoyalsPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\FirstPage.cs" />
-    <Compile Include="Models\Business.cs" />
+    <Compile Include="Models\FaveItem.cs" />
     <Compile Include="ViewModels\FirstPageViewModel.cs" />
     <Compile Include="DataBase\BusinessRepo.cs" />
     <Compile Include="Pages\BasePage.cs" />

@@ -1,18 +1,18 @@
 ﻿using System;
 namespace Loyals.Models
 {
-    public class Business
+    public class FaveItem
     {
         private string v;
         private DateTime dateTime;
 
-        public Business(string v, DateTime dateTime)
+        public FaveItem(string v, DateTime dateTime)
         {
             this.v = v;
             this.dateTime = dateTime;
         }
 
-        public Business(string name, DateTime lastVisit, int totalPoints)
+        public FaveItem(string name, DateTime lastVisit, int totalPoints)
 		{
 			this.Name = name;
 			this.LastVisit = lastVisit;
