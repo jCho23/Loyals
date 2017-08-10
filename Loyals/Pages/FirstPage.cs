@@ -10,11 +10,11 @@ namespace Loyals.Pages
     public class FirstPage : ContentPage
     {
         //Observable collections automatically Update the UI; however, listviews don't 
-        public static ObservableCollection<Business> businesses = new ObservableCollection<Business>()
+        public static ObservableCollection<FaveItem> FaveItems = new ObservableCollection<FaveItem>()
 			{
-				new Business("Zing Cafe", new DateTime(2017, 5, 15)),
+                new FaveItem("Zing Cafe", new DateTime(2017, 5, 15)),
 
-				new Business("La Petite Hair Salon", new DateTime(2017, 5, 16))
+                new FaveItem("La Petite Hair Salon", new DateTime(2017, 5, 16))
 			};
 
         public FirstPage()
@@ -29,7 +29,7 @@ namespace Loyals.Pages
             ListView listView = new ListView
             {
                 // Source of data items.
-                ItemsSource = businesses,
+                ItemsSource = FaveItems,
                 ItemTemplate = new DataTemplate(typeof(BusinessViewCell))
                 //ItemTemplate need to set to data template of view cell
             };
@@ -98,8 +98,8 @@ namespace Loyals.Pages
 					var mi = ((MenuItem)sender);
                     Debug.WriteLine("Delete Context Action clicked: " + mi.CommandParameter);
                     //This is the second Type of type-Casting
-                    var item = mi.CommandParameter as Business;
-                    FirstPage.businesses.Remove(item);
+                    var item = mi.CommandParameter as FaveItem;
+                    FirstPage.FaveItems.Remove(item);
                 };
                 //Add to Viewcell's ContextActions property
                 ContextActions.Add(moreAction);

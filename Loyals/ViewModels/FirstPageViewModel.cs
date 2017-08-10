@@ -5,9 +5,9 @@ namespace Loyals.ViewModels
 {
     public class FirstPageViewModel : BaseViewModel
     {
-        IList<Business> _listOfBusinesses;
+        IList<FaveItem> _listOfBusinesses;
 
-        public IList<Business> ListOfBusinesses
+        public IList<FaveItem> ListOfBusinesses
         {
             get { return _listOfBusinesses; }
             set { SetProperty (ref _listOfBusinesses, value); }
