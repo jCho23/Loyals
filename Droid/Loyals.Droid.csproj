@@ -177,6 +177,7 @@
     <AndroidResource Include="Resources\drawable\curved.png" />
     <AndroidResource Include="Resources\drawable\jordan.png" />
     <AndroidResource Include="Resources\drawable\WorthIt.png" />
+    <AndroidResource Include="Resources\drawable\FingerPrint.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Implementations\" />
