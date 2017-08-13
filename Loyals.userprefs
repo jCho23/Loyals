@@ -3,7 +3,7 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Loyals/Pages/LoginPage.xaml">
     <Files>
       <File FileName="Loyals/Pages/FirstPage.cs" Line="66" Column="27" />
-      <File FileName="Loyals/Pages/LoginPage.xaml" Line="39" Column="55" />
+      <File FileName="Loyals/Pages/LoginPage.xaml" Line="69" Column="43" />
       <File FileName="Loyals/Pages/LoyalsPage.xaml" Line="97" Column="1" />
       <File FileName="Loyals/Models/FaveItem.cs" Line="15" Column="24" />
       <File FileName="Loyals/ViewModels/FirstPageViewModel.cs" Line="13" Column="41" />
