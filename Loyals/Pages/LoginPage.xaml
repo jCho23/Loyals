@@ -21,7 +21,7 @@
                 BackgroundColor="#32cd32"
                 HasShadow="false" >
 
-                <Grid Padding="5">
+                <Grid Padding="-10">
                     <Grid.ColumnDefinitions>
                     </Grid.ColumnDefinitions>
 
@@ -38,7 +38,7 @@
                     <Label Grid.Row="0" Grid.Column="1"
                         x:Name="lblEntryUserName" 
                         TextColor="White"
-                        WidthRequest="30"
+                        WidthRequest="25"
                         Text="Email: " />
                     <Entry Grid.Row="0" Grid.ColumnSpan="2"
                         x:Name="entryUserName"
@@ -67,7 +67,7 @@
                         Text="Login"
                         Style="{StaticResource LoginButton}"
                         HeightRequest="60"
-                        Margin="7"/>
+                        Margin="15"/>
 
                     <Button Grid.Row="3" Grid.ColumnSpan="2"
                         x:Name="btnFPLogin" 
@@ -76,8 +76,8 @@
                         TextColor="White" 
                         Image="FingerPrint.png"
                             HorizontalOptions="Center"
-                            WidthRequest="90"  
-                            HeightRequest="50"/>
+                            WidthRequest="70"  
+                            HeightRequest="60"/>
 
                     <Button Grid.Row="5" Grid.ColumnSpan="2"
                         x:Name="btnCreateAccount" 
