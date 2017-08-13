@@ -23,8 +23,6 @@
 
                 <Grid Padding="5">
                     <Grid.ColumnDefinitions>
-                       
-                         
                     </Grid.ColumnDefinitions>
 
                     <Grid.RowDefinitions>
@@ -32,18 +30,23 @@
                         <RowDefinition Height = "auto" />
                         <RowDefinition Height = "auto" />
                         <RowDefinition Height = "auto" />
+                        <RowDefinition Height = "auto" />
                         <RowDefinition Height = "*" />
                         <RowDefinition Height = "*" />
                     </Grid.RowDefinitions>
-
-
+                    
+                    <Label Grid.Row="0" Grid.Column="1"
+                        x:Name="lblEntryUserName" 
+                        TextColor="White"
+                        WidthRequest="30"
+                        Text="Email: " />
                     <Entry Grid.Row="0" Grid.ColumnSpan="2"
                         x:Name="entryUserName"
                         Text ="{Binding EmailAddress}"
                         TextColor ="White"
                         Placeholder="Email"
-                        WidthRequest="50"
                         Keyboard="Email" />
+
                     <Label Grid.Row="1" Grid.Column="1"
                         x:Name="lblPassword" 
                         TextColor="White"
@@ -55,15 +58,17 @@
                         TextColor="Blue"
                         Placeholder="Password"
                         IsPassword="true" />
+
                     <Button Grid.Row="2" Grid.ColumnSpan="2"
                         x:Name="btnLogin" 
                         TextColor="White"
-                        FontSize="40"
+                        FontSize="30"
                         FontAttributes="Bold"
                         Text="Login"
                         Style="{StaticResource LoginButton}"
                         HeightRequest="60"
                         Margin="7"/>
+
                     <Button Grid.Row="3" Grid.ColumnSpan="2"
                         x:Name="btnFPLogin" 
                         Text="Login using Fingerprint"
@@ -73,11 +78,11 @@
                             HorizontalOptions="Center"
                             WidthRequest="90"  
                             HeightRequest="50"/>
+
                     <Button Grid.Row="5" Grid.ColumnSpan="2"
                         x:Name="btnCreateAccount" 
                         FontSize="Small"
                         Text="Create New Account"
-                        MinimumHeightRequest="100"
                         Margin="-1"/>
                 </Grid>
               </Frame>
