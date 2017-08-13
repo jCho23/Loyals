@@ -60,13 +60,15 @@
                         FontAttributes="Bold"
                         Text="Login"
                         Style="{StaticResource LoginButton}" />
-                    
                     <Button Grid.Row="3" Grid.ColumnSpan="2"
                         x:Name="btnFPLogin" 
                         Text="Login using Fingerprint"
                         FontSize="Large"
-
-                        TextColor="White" />
+                        TextColor="White" 
+                        Image="FingerPrint.png"
+                            HorizontalOptions="Center"
+                            WidthRequest="80"  
+                            HeightRequest="80" />
                     <Button Grid.Row="5" Grid.ColumnSpan="2"
                         x:Name="btnCreateAccount" 
                         FontSize="Large"
