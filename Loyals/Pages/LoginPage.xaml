@@ -67,7 +67,7 @@
                         Text="Login"
                         Style="{StaticResource LoginButton}"
                         HeightRequest="60"
-                        Margin="15"/>
+                        Margin="8"/>
 
                     <Button Grid.Row="3" Grid.ColumnSpan="2"
                         x:Name="btnFPLogin" 
@@ -77,13 +77,14 @@
                         Image="FingerPrint.png"
                             HorizontalOptions="Center"
                             WidthRequest="70"  
-                            HeightRequest="60"/>
+                            HeightRequest="60"
+                        Margin="1"/>
 
                     <Button Grid.Row="5" Grid.ColumnSpan="2"
                         x:Name="btnCreateAccount" 
                         FontSize="Small"
                         Text="Create New Account"
-                        Margin="-1"/>
+                        Margin="2"/>
                 </Grid>
               </Frame>
         </StackLayout>
