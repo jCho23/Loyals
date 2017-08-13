@@ -23,8 +23,8 @@
 
                 <Grid Padding="5">
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                         <ColumnDefinition Width="*"/>
+                       
+                         
                     </Grid.ColumnDefinitions>
 
                     <Grid.RowDefinitions>
@@ -33,21 +33,23 @@
                         <RowDefinition Height = "auto" />
                         <RowDefinition Height = "auto" />
                         <RowDefinition Height = "*" />
-                        <RowDefinition Height = "auto" />
+                        <RowDefinition Height = "*" />
                     </Grid.RowDefinitions>
 
-                
-                    <Entry Grid.Row="0" Grid.Column="1"
+
+                    <Entry Grid.Row="0" Grid.ColumnSpan="2"
                         x:Name="entryUserName"
                         Text ="{Binding EmailAddress}"
                         TextColor ="White"
                         Placeholder="Email"
-                        Keyboard="Email"/>
-                    <Label Grid.Row="1" Grid.Column="0"
+                        WidthRequest="50"
+                        Keyboard="Email" />
+                    <Label Grid.Row="1" Grid.Column="1"
                         x:Name="lblPassword" 
                         TextColor="White"
+                        WidthRequest="50"
                         Text="Password: " />
-                    <Entry Grid.Row="1" Grid.Column="1"
+                    <Entry Grid.Row="1" Grid.ColumnSpan="2"
                         x:Name="entryPassword" 
                         Text= "{Binding Password}"
                         TextColor="Blue"
@@ -56,11 +58,12 @@
                     <Button Grid.Row="2" Grid.ColumnSpan="2"
                         x:Name="btnLogin" 
                         TextColor="White"
-                        FontSize="Large"
+                        FontSize="40"
                         FontAttributes="Bold"
                         Text="Login"
                         Style="{StaticResource LoginButton}"
-                        HeightRequest="60"/>
+                        HeightRequest="60"
+                        Margin="7"/>
                     <Button Grid.Row="3" Grid.ColumnSpan="2"
                         x:Name="btnFPLogin" 
                         Text="Login using Fingerprint"
@@ -69,11 +72,13 @@
                         Image="FingerPrint.png"
                             HorizontalOptions="Center"
                             WidthRequest="90"  
-                            HeightRequest="80" />
+                            HeightRequest="50"/>
                     <Button Grid.Row="5" Grid.ColumnSpan="2"
                         x:Name="btnCreateAccount" 
-                        FontSize="Large"
-                        Text="Create New Account"/>
+                        FontSize="Small"
+                        Text="Create New Account"
+                        MinimumHeightRequest="100"
+                        Margin="-1"/>
                 </Grid>
               </Frame>
         </StackLayout>
