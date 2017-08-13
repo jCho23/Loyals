@@ -40,7 +40,7 @@
                     <Entry Grid.Row="0" Grid.Column="1"
                         x:Name="entryUserName"
                         Text ="{Binding EmailAddress}"
-                        TextColor ="Blue"
+                        TextColor ="White"
                         Placeholder="Email"
                         Keyboard="Email"/>
                     <Label Grid.Row="1" Grid.Column="0"
@@ -55,20 +55,22 @@
                         IsPassword="true" />
                     <Button Grid.Row="2" Grid.ColumnSpan="2"
                         x:Name="btnLogin" 
-                        TextColor="Black"
+                        TextColor="White"
                         FontSize="Large"
                         FontAttributes="Bold"
-                        Text="Login" />
+                        Text="Login"
+                        Style="{StaticResource LoginButton}" />
+                    
                     <Button Grid.Row="3" Grid.ColumnSpan="2"
                         x:Name="btnFPLogin" 
                         Text="Login using Fingerprint"
                         FontSize="Large"
-                        Style="{StaticResource LoginButton}"
-                        TextColor="Aqua" />
+
+                        TextColor="White" />
                     <Button Grid.Row="5" Grid.ColumnSpan="2"
                         x:Name="btnCreateAccount" 
                         FontSize="Large"
-                        Text="Create New Account" />
+                        Text="Create New Account"/>
                 </Grid>
               </Frame>
         </StackLayout>
